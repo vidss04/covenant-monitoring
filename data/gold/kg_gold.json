@@ -1,0 +1,501 @@
+{
+ "AIH": {
+  "nodes": [
+   {
+    "id": "cov:total_net_leverage",
+    "type": "covenant",
+    "op": "max",
+    "section": "7.11(a)",
+    "doc": "BASE"
+   },
+   {
+    "id": "cov:interest_coverage",
+    "type": "covenant",
+    "op": "min",
+    "threshold": 3.0,
+    "section": "7.11(b)",
+    "doc": "BASE"
+   },
+   {
+    "id": "thr:total_net_leverage:BASE:thereafter",
+    "type": "threshold",
+    "value": 4.5,
+    "through": null,
+    "doc": "BASE"
+   },
+   {
+    "id": "term:Consolidated EBITDA",
+    "type": "defined_term",
+    "section": "1.01",
+    "doc": "BASE"
+   },
+   {
+    "id": "addback:Non-Recurring Charges",
+    "type": "addback",
+    "doc": "BASE"
+   },
+   {
+    "id": "addback:Pro Forma Cost Savings",
+    "type": "addback",
+    "doc": "BASE"
+   },
+   {
+    "id": "cap:1.01(c):BASE",
+    "type": "cap",
+    "cap_type": "pct",
+    "value": 0.15,
+    "section": "1.01(c)",
+    "doc": "BASE"
+   },
+   {
+    "id": "amd:AMD1",
+    "type": "amendment",
+    "execution": "2025-05-20",
+    "effective": "2025-06-30",
+    "doc": "AMD1"
+   },
+   {
+    "id": "thr:total_net_leverage:AMD1",
+    "type": "threshold",
+    "value": 4.25,
+    "doc": "AMD1"
+   }
+  ],
+  "edges": [
+   [
+    "cov:total_net_leverage",
+    "thr:total_net_leverage:BASE:thereafter",
+    "has_threshold"
+   ],
+   [
+    "cov:total_net_leverage",
+    "term:Consolidated EBITDA",
+    "uses"
+   ],
+   [
+    "cov:interest_coverage",
+    "term:Consolidated EBITDA",
+    "uses"
+   ],
+   [
+    "term:Consolidated EBITDA",
+    "addback:Non-Recurring Charges",
+    "permits"
+   ],
+   [
+    "addback:Non-Recurring Charges",
+    "cap:1.01(c):BASE",
+    "capped_by"
+   ],
+   [
+    "term:Consolidated EBITDA",
+    "addback:Pro Forma Cost Savings",
+    "permits"
+   ],
+   [
+    "addback:Pro Forma Cost Savings",
+    "cap:1.01(c):BASE",
+    "capped_by"
+   ],
+   [
+    "amd:AMD1",
+    "thr:total_net_leverage:AMD1",
+    "sets"
+   ],
+   [
+    "cov:total_net_leverage",
+    "thr:total_net_leverage:AMD1",
+    "has_threshold"
+   ]
+  ]
+ },
+ "BHS": {
+  "nodes": [
+   {
+    "id": "cov:total_leverage",
+    "type": "covenant",
+    "op": "max",
+    "section": "6.12(a)",
+    "doc": "BASE"
+   },
+   {
+    "id": "cov:fixed_charge_coverage",
+    "type": "covenant",
+    "op": "min",
+    "threshold": 1.25,
+    "section": "6.12(b)",
+    "doc": "BASE"
+   },
+   {
+    "id": "thr:total_leverage:BASE:thereafter",
+    "type": "threshold",
+    "value": 5.0,
+    "through": null,
+    "doc": "BASE"
+   },
+   {
+    "id": "term:Consolidated EBITDA",
+    "type": "defined_term",
+    "section": "1.01",
+    "doc": "BASE"
+   },
+   {
+    "id": "addback:Restructuring Charges",
+    "type": "addback",
+    "doc": "BASE"
+   },
+   {
+    "id": "addback:Pro Forma Cost Savings",
+    "type": "addback",
+    "doc": "BASE"
+   },
+   {
+    "id": "cap:1.01(d):BASE",
+    "type": "cap",
+    "cap_type": "abs",
+    "value": 5000,
+    "section": "1.01(d)",
+    "doc": "BASE"
+   },
+   {
+    "id": "cap:1.01(e):BASE",
+    "type": "cap",
+    "cap_type": "pct",
+    "value": 0.1,
+    "section": "1.01(e)",
+    "doc": "BASE"
+   },
+   {
+    "id": "amd:AMD1",
+    "type": "amendment",
+    "execution": "2025-03-14",
+    "effective": "2025-03-31",
+    "doc": "AMD1"
+   },
+   {
+    "id": "addback:Run-Rate Synergies",
+    "type": "addback",
+    "doc": "AMD1"
+   },
+   {
+    "id": "cap:1.01(e):AMD1",
+    "type": "cap",
+    "cap_type": "pct",
+    "value": 0.2,
+    "section": "1.01(e)",
+    "doc": "AMD1"
+   },
+   {
+    "id": "amd:AMD2",
+    "type": "amendment",
+    "execution": "2026-02-27",
+    "effective": "2026-03-31",
+    "doc": "AMD2"
+   },
+   {
+    "id": "thr:total_leverage:AMD2",
+    "type": "threshold",
+    "value": 5.25,
+    "doc": "AMD2"
+   }
+  ],
+  "edges": [
+   [
+    "cov:total_leverage",
+    "thr:total_leverage:BASE:thereafter",
+    "has_threshold"
+   ],
+   [
+    "cov:total_leverage",
+    "term:Consolidated EBITDA",
+    "uses"
+   ],
+   [
+    "cov:fixed_charge_coverage",
+    "term:Consolidated EBITDA",
+    "uses"
+   ],
+   [
+    "term:Consolidated EBITDA",
+    "addback:Restructuring Charges",
+    "permits"
+   ],
+   [
+    "addback:Restructuring Charges",
+    "cap:1.01(d):BASE",
+    "capped_by"
+   ],
+   [
+    "term:Consolidated EBITDA",
+    "addback:Pro Forma Cost Savings",
+    "permits"
+   ],
+   [
+    "addback:Pro Forma Cost Savings",
+    "cap:1.01(e):BASE",
+    "capped_by"
+   ],
+   [
+    "amd:AMD1",
+    "addback:Run-Rate Synergies",
+    "adds"
+   ],
+   [
+    "term:Consolidated EBITDA",
+    "addback:Run-Rate Synergies",
+    "permits"
+   ],
+   [
+    "addback:Run-Rate Synergies",
+    "cap:1.01(e):AMD1",
+    "capped_by"
+   ],
+   [
+    "amd:AMD1",
+    "cap:1.01(e):AMD1",
+    "sets"
+   ],
+   [
+    "addback:Pro Forma Cost Savings",
+    "cap:1.01(e):AMD1",
+    "capped_by"
+   ],
+   [
+    "amd:AMD2",
+    "thr:total_leverage:AMD2",
+    "sets"
+   ],
+   [
+    "cov:total_leverage",
+    "thr:total_leverage:AMD2",
+    "has_threshold"
+   ]
+  ]
+ },
+ "CLC": {
+  "nodes": [
+   {
+    "id": "cov:senior_secured_net_leverage",
+    "type": "covenant",
+    "op": "max",
+    "section": "7.1(a)",
+    "doc": "BASE"
+   },
+   {
+    "id": "cov:interest_coverage",
+    "type": "covenant",
+    "op": "min",
+    "threshold": 2.5,
+    "section": "7.1(b)",
+    "doc": "BASE"
+   },
+   {
+    "id": "thr:senior_secured_net_leverage:BASE:thereafter",
+    "type": "threshold",
+    "value": 3.75,
+    "through": null,
+    "doc": "BASE"
+   },
+   {
+    "id": "term:Consolidated EBITDA",
+    "type": "defined_term",
+    "section": "1.01",
+    "doc": "BASE"
+   },
+   {
+    "id": "addback:Non-Recurring Charges",
+    "type": "addback",
+    "doc": "BASE"
+   },
+   {
+    "id": "addback:Transaction Costs",
+    "type": "addback",
+    "doc": "BASE"
+   },
+   {
+    "id": "cap:1.01(b):BASE",
+    "type": "cap",
+    "cap_type": "pct",
+    "value": 0.1,
+    "section": "1.01(b)",
+    "doc": "BASE"
+   },
+   {
+    "id": "amd:AMD1",
+    "type": "amendment",
+    "execution": "2026-05-10",
+    "effective": null,
+    "doc": "AMD1"
+   },
+   {
+    "id": "thr:senior_secured_net_leverage:AMD1",
+    "type": "threshold",
+    "value": 3.5,
+    "doc": "AMD1"
+   }
+  ],
+  "edges": [
+   [
+    "cov:senior_secured_net_leverage",
+    "thr:senior_secured_net_leverage:BASE:thereafter",
+    "has_threshold"
+   ],
+   [
+    "cov:senior_secured_net_leverage",
+    "term:Consolidated EBITDA",
+    "uses"
+   ],
+   [
+    "cov:interest_coverage",
+    "term:Consolidated EBITDA",
+    "uses"
+   ],
+   [
+    "term:Consolidated EBITDA",
+    "addback:Non-Recurring Charges",
+    "permits"
+   ],
+   [
+    "addback:Non-Recurring Charges",
+    "cap:1.01(b):BASE",
+    "capped_by"
+   ],
+   [
+    "term:Consolidated EBITDA",
+    "addback:Transaction Costs",
+    "permits"
+   ],
+   [
+    "amd:AMD1",
+    "thr:senior_secured_net_leverage:AMD1",
+    "sets"
+   ],
+   [
+    "cov:senior_secured_net_leverage",
+    "thr:senior_secured_net_leverage:AMD1",
+    "has_threshold"
+   ]
+  ]
+ },
+ "DSW": {
+  "nodes": [
+   {
+    "id": "cov:total_net_leverage",
+    "type": "covenant",
+    "op": "max",
+    "section": "6.10(a)",
+    "doc": "BASE"
+   },
+   {
+    "id": "cov:interest_coverage",
+    "type": "covenant",
+    "op": "min",
+    "threshold": 2.0,
+    "section": "6.10(b)",
+    "doc": "BASE"
+   },
+   {
+    "id": "thr:total_net_leverage:BASE:2025-06-30",
+    "type": "threshold",
+    "value": 6.0,
+    "through": "2025-06-30",
+    "doc": "BASE"
+   },
+   {
+    "id": "thr:total_net_leverage:BASE:2025-12-31",
+    "type": "threshold",
+    "value": 5.75,
+    "through": "2025-12-31",
+    "doc": "BASE"
+   },
+   {
+    "id": "thr:total_net_leverage:BASE:thereafter",
+    "type": "threshold",
+    "value": 5.5,
+    "through": null,
+    "doc": "BASE"
+   },
+   {
+    "id": "term:Consolidated EBITDA",
+    "type": "defined_term",
+    "section": "1.01",
+    "doc": "BASE"
+   },
+   {
+    "id": "addback:Non-Recurring Charges",
+    "type": "addback",
+    "doc": "BASE"
+   },
+   {
+    "id": "addback:Pro Forma Cost Savings",
+    "type": "addback",
+    "doc": "BASE"
+   },
+   {
+    "id": "addback:Stock-Based Compensation",
+    "type": "addback",
+    "doc": "BASE"
+   },
+   {
+    "id": "cap:1.01(f):BASE",
+    "type": "cap",
+    "cap_type": "pct",
+    "value": 0.125,
+    "section": "1.01(f)",
+    "doc": "BASE"
+   }
+  ],
+  "edges": [
+   [
+    "cov:total_net_leverage",
+    "thr:total_net_leverage:BASE:2025-06-30",
+    "has_threshold"
+   ],
+   [
+    "cov:total_net_leverage",
+    "thr:total_net_leverage:BASE:2025-12-31",
+    "has_threshold"
+   ],
+   [
+    "cov:total_net_leverage",
+    "thr:total_net_leverage:BASE:thereafter",
+    "has_threshold"
+   ],
+   [
+    "cov:total_net_leverage",
+    "term:Consolidated EBITDA",
+    "uses"
+   ],
+   [
+    "cov:interest_coverage",
+    "term:Consolidated EBITDA",
+    "uses"
+   ],
+   [
+    "term:Consolidated EBITDA",
+    "addback:Non-Recurring Charges",
+    "permits"
+   ],
+   [
+    "addback:Non-Recurring Charges",
+    "cap:1.01(f):BASE",
+    "capped_by"
+   ],
+   [
+    "term:Consolidated EBITDA",
+    "addback:Pro Forma Cost Savings",
+    "permits"
+   ],
+   [
+    "addback:Pro Forma Cost Savings",
+    "cap:1.01(f):BASE",
+    "capped_by"
+   ],
+   [
+    "term:Consolidated EBITDA",
+    "addback:Stock-Based Compensation",
+    "permits"
+   ]
+  ]
+ }
+}

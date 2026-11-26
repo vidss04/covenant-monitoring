@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+results/demo_audit_log.jsonl
+results/demo_cli_audit.jsonl
+results/scratch*.jsonl
+.env
+.DS_Store

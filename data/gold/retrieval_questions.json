@@ -1,0 +1,827 @@
+[
+ {
+  "id": "AIH-thr-2024-12-31",
+  "borrower": "AIH",
+  "type": "governing_threshold",
+  "period": "2024-12-31",
+  "question": "What is the maximum Total Net Leverage Ratio for Apex Industrial Holdings, Inc. for the Test Period ending 2024-12-31?",
+  "answer": 4.5,
+  "evidence": [
+   [
+    "BASE",
+    "7.11(a)"
+   ]
+  ]
+ },
+ {
+  "id": "AIH-thr-2025-03-31",
+  "borrower": "AIH",
+  "type": "governing_threshold",
+  "period": "2025-03-31",
+  "question": "What is the maximum Total Net Leverage Ratio for Apex Industrial Holdings, Inc. for the Test Period ending 2025-03-31?",
+  "answer": 4.5,
+  "evidence": [
+   [
+    "BASE",
+    "7.11(a)"
+   ]
+  ]
+ },
+ {
+  "id": "AIH-thr-2025-06-30",
+  "borrower": "AIH",
+  "type": "governing_threshold",
+  "period": "2025-06-30",
+  "question": "What is the maximum Total Net Leverage Ratio for Apex Industrial Holdings, Inc. for the Test Period ending 2025-06-30?",
+  "answer": 4.25,
+  "evidence": [
+   [
+    "BASE",
+    "7.11(a)"
+   ],
+   [
+    "AMD1",
+    "A2(a)"
+   ],
+   [
+    "AMD1",
+    "A3"
+   ]
+  ]
+ },
+ {
+  "id": "AIH-thr-2025-09-30",
+  "borrower": "AIH",
+  "type": "governing_threshold",
+  "period": "2025-09-30",
+  "question": "What is the maximum Total Net Leverage Ratio for Apex Industrial Holdings, Inc. for the Test Period ending 2025-09-30?",
+  "answer": 4.25,
+  "evidence": [
+   [
+    "BASE",
+    "7.11(a)"
+   ],
+   [
+    "AMD1",
+    "A2(a)"
+   ],
+   [
+    "AMD1",
+    "A3"
+   ]
+  ]
+ },
+ {
+  "id": "AIH-thr-2025-12-31",
+  "borrower": "AIH",
+  "type": "governing_threshold",
+  "period": "2025-12-31",
+  "question": "What is the maximum Total Net Leverage Ratio for Apex Industrial Holdings, Inc. for the Test Period ending 2025-12-31?",
+  "answer": 4.25,
+  "evidence": [
+   [
+    "BASE",
+    "7.11(a)"
+   ],
+   [
+    "AMD1",
+    "A2(a)"
+   ],
+   [
+    "AMD1",
+    "A3"
+   ]
+  ]
+ },
+ {
+  "id": "AIH-thr-2026-03-31",
+  "borrower": "AIH",
+  "type": "governing_threshold",
+  "period": "2026-03-31",
+  "question": "What is the maximum Total Net Leverage Ratio for Apex Industrial Holdings, Inc. for the Test Period ending 2026-03-31?",
+  "answer": 4.25,
+  "evidence": [
+   [
+    "BASE",
+    "7.11(a)"
+   ],
+   [
+    "AMD1",
+    "A2(a)"
+   ],
+   [
+    "AMD1",
+    "A3"
+   ]
+  ]
+ },
+ {
+  "id": "AIH-thr-2026-06-30",
+  "borrower": "AIH",
+  "type": "governing_threshold",
+  "period": "2026-06-30",
+  "question": "What is the maximum Total Net Leverage Ratio for Apex Industrial Holdings, Inc. for the Test Period ending 2026-06-30?",
+  "answer": 4.25,
+  "evidence": [
+   [
+    "BASE",
+    "7.11(a)"
+   ],
+   [
+    "AMD1",
+    "A2(a)"
+   ],
+   [
+    "AMD1",
+    "A3"
+   ]
+  ]
+ },
+ {
+  "id": "AIH-thr-2026-09-30",
+  "borrower": "AIH",
+  "type": "governing_threshold",
+  "period": "2026-09-30",
+  "question": "What is the maximum Total Net Leverage Ratio for Apex Industrial Holdings, Inc. for the Test Period ending 2026-09-30?",
+  "answer": 4.25,
+  "evidence": [
+   [
+    "BASE",
+    "7.11(a)"
+   ],
+   [
+    "AMD1",
+    "A2(a)"
+   ],
+   [
+    "AMD1",
+    "A3"
+   ]
+  ]
+ },
+ {
+  "id": "AIH-cap-Non-Recurrin-2024-12-31",
+  "borrower": "AIH",
+  "type": "addback_cap",
+  "period": "2024-12-31",
+  "question": "What limit applies to the add-back of Non-Recurring Charges in Consolidated EBITDA for Apex Industrial Holdings, Inc. for the Test Period ending 2024-12-31?",
+  "answer": 0.15,
+  "answer_type": "pct",
+  "evidence": [
+   [
+    "BASE",
+    "1.01"
+   ],
+   [
+    "BASE",
+    "1.01(c)"
+   ]
+  ]
+ },
+ {
+  "id": "AIH-cap-Pro Forma Co-2024-12-31",
+  "borrower": "AIH",
+  "type": "addback_cap",
+  "period": "2024-12-31",
+  "question": "What limit applies to the add-back of Pro Forma Cost Savings in Consolidated EBITDA for Apex Industrial Holdings, Inc. for the Test Period ending 2024-12-31?",
+  "answer": 0.15,
+  "answer_type": "pct",
+  "evidence": [
+   [
+    "BASE",
+    "1.01"
+   ],
+   [
+    "BASE",
+    "1.01(c)"
+   ]
+  ]
+ },
+ {
+  "id": "AIH-cap-Non-Recurrin-2026-06-30",
+  "borrower": "AIH",
+  "type": "addback_cap",
+  "period": "2026-06-30",
+  "question": "What limit applies to the add-back of Non-Recurring Charges in Consolidated EBITDA for Apex Industrial Holdings, Inc. for the Test Period ending 2026-06-30?",
+  "answer": 0.15,
+  "answer_type": "pct",
+  "evidence": [
+   [
+    "BASE",
+    "1.01"
+   ],
+   [
+    "BASE",
+    "1.01(c)"
+   ]
+  ]
+ },
+ {
+  "id": "AIH-cap-Pro Forma Co-2026-06-30",
+  "borrower": "AIH",
+  "type": "addback_cap",
+  "period": "2026-06-30",
+  "question": "What limit applies to the add-back of Pro Forma Cost Savings in Consolidated EBITDA for Apex Industrial Holdings, Inc. for the Test Period ending 2026-06-30?",
+  "answer": 0.15,
+  "answer_type": "pct",
+  "evidence": [
+   [
+    "BASE",
+    "1.01"
+   ],
+   [
+    "BASE",
+    "1.01(c)"
+   ]
+  ]
+ },
+ {
+  "id": "BHS-thr-2024-12-31",
+  "borrower": "BHS",
+  "type": "governing_threshold",
+  "period": "2024-12-31",
+  "question": "What is the maximum Total Leverage Ratio for Brightwater Health Services, LLC for the Test Period ending 2024-12-31?",
+  "answer": 5.0,
+  "evidence": [
+   [
+    "BASE",
+    "6.12(a)"
+   ]
+  ]
+ },
+ {
+  "id": "BHS-thr-2025-03-31",
+  "borrower": "BHS",
+  "type": "governing_threshold",
+  "period": "2025-03-31",
+  "question": "What is the maximum Total Leverage Ratio for Brightwater Health Services, LLC for the Test Period ending 2025-03-31?",
+  "answer": 5.0,
+  "evidence": [
+   [
+    "BASE",
+    "6.12(a)"
+   ]
+  ]
+ },
+ {
+  "id": "BHS-thr-2025-06-30",
+  "borrower": "BHS",
+  "type": "governing_threshold",
+  "period": "2025-06-30",
+  "question": "What is the maximum Total Leverage Ratio for Brightwater Health Services, LLC for the Test Period ending 2025-06-30?",
+  "answer": 5.0,
+  "evidence": [
+   [
+    "BASE",
+    "6.12(a)"
+   ]
+  ]
+ },
+ {
+  "id": "BHS-thr-2025-09-30",
+  "borrower": "BHS",
+  "type": "governing_threshold",
+  "period": "2025-09-30",
+  "question": "What is the maximum Total Leverage Ratio for Brightwater Health Services, LLC for the Test Period ending 2025-09-30?",
+  "answer": 5.0,
+  "evidence": [
+   [
+    "BASE",
+    "6.12(a)"
+   ]
+  ]
+ },
+ {
+  "id": "BHS-thr-2025-12-31",
+  "borrower": "BHS",
+  "type": "governing_threshold",
+  "period": "2025-12-31",
+  "question": "What is the maximum Total Leverage Ratio for Brightwater Health Services, LLC for the Test Period ending 2025-12-31?",
+  "answer": 5.0,
+  "evidence": [
+   [
+    "BASE",
+    "6.12(a)"
+   ]
+  ]
+ },
+ {
+  "id": "BHS-thr-2026-03-31",
+  "borrower": "BHS",
+  "type": "governing_threshold",
+  "period": "2026-03-31",
+  "question": "What is the maximum Total Leverage Ratio for Brightwater Health Services, LLC for the Test Period ending 2026-03-31?",
+  "answer": 5.25,
+  "evidence": [
+   [
+    "BASE",
+    "6.12(a)"
+   ],
+   [
+    "AMD2",
+    "A2(a)"
+   ],
+   [
+    "AMD2",
+    "A3"
+   ]
+  ]
+ },
+ {
+  "id": "BHS-thr-2026-06-30",
+  "borrower": "BHS",
+  "type": "governing_threshold",
+  "period": "2026-06-30",
+  "question": "What is the maximum Total Leverage Ratio for Brightwater Health Services, LLC for the Test Period ending 2026-06-30?",
+  "answer": 5.25,
+  "evidence": [
+   [
+    "BASE",
+    "6.12(a)"
+   ],
+   [
+    "AMD2",
+    "A2(a)"
+   ],
+   [
+    "AMD2",
+    "A3"
+   ]
+  ]
+ },
+ {
+  "id": "BHS-thr-2026-09-30",
+  "borrower": "BHS",
+  "type": "governing_threshold",
+  "period": "2026-09-30",
+  "question": "What is the maximum Total Leverage Ratio for Brightwater Health Services, LLC for the Test Period ending 2026-09-30?",
+  "answer": 5.25,
+  "evidence": [
+   [
+    "BASE",
+    "6.12(a)"
+   ],
+   [
+    "AMD2",
+    "A2(a)"
+   ],
+   [
+    "AMD2",
+    "A3"
+   ]
+  ]
+ },
+ {
+  "id": "BHS-cap-Restructurin-2024-12-31",
+  "borrower": "BHS",
+  "type": "addback_cap",
+  "period": "2024-12-31",
+  "question": "What limit applies to the add-back of Restructuring Charges in Consolidated EBITDA for Brightwater Health Services, LLC for the Test Period ending 2024-12-31?",
+  "answer": 5000,
+  "answer_type": "abs",
+  "evidence": [
+   [
+    "BASE",
+    "1.01"
+   ],
+   [
+    "BASE",
+    "1.01(d)"
+   ]
+  ]
+ },
+ {
+  "id": "BHS-cap-Pro Forma Co-2024-12-31",
+  "borrower": "BHS",
+  "type": "addback_cap",
+  "period": "2024-12-31",
+  "question": "What limit applies to the add-back of Pro Forma Cost Savings in Consolidated EBITDA for Brightwater Health Services, LLC for the Test Period ending 2024-12-31?",
+  "answer": 0.1,
+  "answer_type": "pct",
+  "evidence": [
+   [
+    "BASE",
+    "1.01"
+   ],
+   [
+    "BASE",
+    "1.01(e)"
+   ]
+  ]
+ },
+ {
+  "id": "BHS-cap-Restructurin-2026-06-30",
+  "borrower": "BHS",
+  "type": "addback_cap",
+  "period": "2026-06-30",
+  "question": "What limit applies to the add-back of Restructuring Charges in Consolidated EBITDA for Brightwater Health Services, LLC for the Test Period ending 2026-06-30?",
+  "answer": 5000,
+  "answer_type": "abs",
+  "evidence": [
+   [
+    "BASE",
+    "1.01"
+   ],
+   [
+    "BASE",
+    "1.01(d)"
+   ]
+  ]
+ },
+ {
+  "id": "BHS-cap-Pro Forma Co-2026-06-30",
+  "borrower": "BHS",
+  "type": "addback_cap",
+  "period": "2026-06-30",
+  "question": "What limit applies to the add-back of Pro Forma Cost Savings in Consolidated EBITDA for Brightwater Health Services, LLC for the Test Period ending 2026-06-30?",
+  "answer": 0.2,
+  "answer_type": "pct",
+  "evidence": [
+   [
+    "BASE",
+    "1.01"
+   ],
+   [
+    "AMD1",
+    "A2(b)"
+   ],
+   [
+    "AMD1",
+    "A3"
+   ]
+  ]
+ },
+ {
+  "id": "BHS-cap-Run-Rate Syn-2026-06-30",
+  "borrower": "BHS",
+  "type": "addback_cap",
+  "period": "2026-06-30",
+  "question": "What limit applies to the add-back of Run-Rate Synergies in Consolidated EBITDA for Brightwater Health Services, LLC for the Test Period ending 2026-06-30?",
+  "answer": 0.2,
+  "answer_type": "pct",
+  "evidence": [
+   [
+    "BASE",
+    "1.01"
+   ],
+   [
+    "AMD1",
+    "A2(b)"
+   ],
+   [
+    "AMD1",
+    "A3"
+   ],
+   [
+    "AMD1",
+    "A2(a)"
+   ]
+  ]
+ },
+ {
+  "id": "BHS-perm-2024-12-31",
+  "borrower": "BHS",
+  "type": "addback_permitted",
+  "period": "2024-12-31",
+  "question": "Is Run-Rate Synergies a permitted add-back to Consolidated EBITDA for Brightwater Health Services, LLC for the Test Period ending 2024-12-31?",
+  "answer": false,
+  "evidence": [
+   [
+    "BASE",
+    "1.01"
+   ]
+  ]
+ },
+ {
+  "id": "BHS-perm-2025-03-31",
+  "borrower": "BHS",
+  "type": "addback_permitted",
+  "period": "2025-03-31",
+  "question": "Is Run-Rate Synergies a permitted add-back to Consolidated EBITDA for Brightwater Health Services, LLC for the Test Period ending 2025-03-31?",
+  "answer": true,
+  "evidence": [
+   [
+    "BASE",
+    "1.01"
+   ],
+   [
+    "AMD1",
+    "A2(a)"
+   ],
+   [
+    "AMD1",
+    "A3"
+   ]
+  ]
+ },
+ {
+  "id": "CLC-thr-2024-12-31",
+  "borrower": "CLC",
+  "type": "governing_threshold",
+  "period": "2024-12-31",
+  "question": "What is the maximum Senior Secured Net Leverage Ratio for Cedar Logistics Corp. for the Test Period ending 2024-12-31?",
+  "answer": 3.75,
+  "evidence": [
+   [
+    "BASE",
+    "7.1(a)"
+   ]
+  ]
+ },
+ {
+  "id": "CLC-thr-2025-03-31",
+  "borrower": "CLC",
+  "type": "governing_threshold",
+  "period": "2025-03-31",
+  "question": "What is the maximum Senior Secured Net Leverage Ratio for Cedar Logistics Corp. for the Test Period ending 2025-03-31?",
+  "answer": 3.75,
+  "evidence": [
+   [
+    "BASE",
+    "7.1(a)"
+   ]
+  ]
+ },
+ {
+  "id": "CLC-thr-2025-06-30",
+  "borrower": "CLC",
+  "type": "governing_threshold",
+  "period": "2025-06-30",
+  "question": "What is the maximum Senior Secured Net Leverage Ratio for Cedar Logistics Corp. for the Test Period ending 2025-06-30?",
+  "answer": 3.75,
+  "evidence": [
+   [
+    "BASE",
+    "7.1(a)"
+   ]
+  ]
+ },
+ {
+  "id": "CLC-thr-2025-09-30",
+  "borrower": "CLC",
+  "type": "governing_threshold",
+  "period": "2025-09-30",
+  "question": "What is the maximum Senior Secured Net Leverage Ratio for Cedar Logistics Corp. for the Test Period ending 2025-09-30?",
+  "answer": 3.75,
+  "evidence": [
+   [
+    "BASE",
+    "7.1(a)"
+   ]
+  ]
+ },
+ {
+  "id": "CLC-thr-2025-12-31",
+  "borrower": "CLC",
+  "type": "governing_threshold",
+  "period": "2025-12-31",
+  "question": "What is the maximum Senior Secured Net Leverage Ratio for Cedar Logistics Corp. for the Test Period ending 2025-12-31?",
+  "answer": 3.75,
+  "evidence": [
+   [
+    "BASE",
+    "7.1(a)"
+   ]
+  ]
+ },
+ {
+  "id": "CLC-thr-2026-03-31",
+  "borrower": "CLC",
+  "type": "governing_threshold",
+  "period": "2026-03-31",
+  "question": "What is the maximum Senior Secured Net Leverage Ratio for Cedar Logistics Corp. for the Test Period ending 2026-03-31?",
+  "answer": 3.75,
+  "evidence": [
+   [
+    "BASE",
+    "7.1(a)"
+   ]
+  ]
+ },
+ {
+  "id": "CLC-cap-Non-Recurrin-2024-12-31",
+  "borrower": "CLC",
+  "type": "addback_cap",
+  "period": "2024-12-31",
+  "question": "What limit applies to the add-back of Non-Recurring Charges in Consolidated EBITDA for Cedar Logistics Corp. for the Test Period ending 2024-12-31?",
+  "answer": 0.1,
+  "answer_type": "pct",
+  "evidence": [
+   [
+    "BASE",
+    "1.01"
+   ],
+   [
+    "BASE",
+    "1.01(b)"
+   ]
+  ]
+ },
+ {
+  "id": "CLC-cap-Non-Recurrin-2026-06-30",
+  "borrower": "CLC",
+  "type": "addback_cap",
+  "period": "2026-06-30",
+  "question": "What limit applies to the add-back of Non-Recurring Charges in Consolidated EBITDA for Cedar Logistics Corp. for the Test Period ending 2026-06-30?",
+  "answer": 0.1,
+  "answer_type": "pct",
+  "evidence": [
+   [
+    "BASE",
+    "1.01"
+   ],
+   [
+    "BASE",
+    "1.01(b)"
+   ]
+  ]
+ },
+ {
+  "id": "DSW-thr-2024-12-31",
+  "borrower": "DSW",
+  "type": "governing_threshold",
+  "period": "2024-12-31",
+  "question": "What is the maximum Total Net Leverage Ratio for Delta Software Group, Inc. for the Test Period ending 2024-12-31?",
+  "answer": 6.0,
+  "evidence": [
+   [
+    "BASE",
+    "6.10(a)"
+   ]
+  ]
+ },
+ {
+  "id": "DSW-thr-2025-03-31",
+  "borrower": "DSW",
+  "type": "governing_threshold",
+  "period": "2025-03-31",
+  "question": "What is the maximum Total Net Leverage Ratio for Delta Software Group, Inc. for the Test Period ending 2025-03-31?",
+  "answer": 6.0,
+  "evidence": [
+   [
+    "BASE",
+    "6.10(a)"
+   ]
+  ]
+ },
+ {
+  "id": "DSW-thr-2025-06-30",
+  "borrower": "DSW",
+  "type": "governing_threshold",
+  "period": "2025-06-30",
+  "question": "What is the maximum Total Net Leverage Ratio for Delta Software Group, Inc. for the Test Period ending 2025-06-30?",
+  "answer": 6.0,
+  "evidence": [
+   [
+    "BASE",
+    "6.10(a)"
+   ]
+  ]
+ },
+ {
+  "id": "DSW-thr-2025-09-30",
+  "borrower": "DSW",
+  "type": "governing_threshold",
+  "period": "2025-09-30",
+  "question": "What is the maximum Total Net Leverage Ratio for Delta Software Group, Inc. for the Test Period ending 2025-09-30?",
+  "answer": 5.75,
+  "evidence": [
+   [
+    "BASE",
+    "6.10(a)"
+   ]
+  ]
+ },
+ {
+  "id": "DSW-thr-2025-12-31",
+  "borrower": "DSW",
+  "type": "governing_threshold",
+  "period": "2025-12-31",
+  "question": "What is the maximum Total Net Leverage Ratio for Delta Software Group, Inc. for the Test Period ending 2025-12-31?",
+  "answer": 5.75,
+  "evidence": [
+   [
+    "BASE",
+    "6.10(a)"
+   ]
+  ]
+ },
+ {
+  "id": "DSW-thr-2026-03-31",
+  "borrower": "DSW",
+  "type": "governing_threshold",
+  "period": "2026-03-31",
+  "question": "What is the maximum Total Net Leverage Ratio for Delta Software Group, Inc. for the Test Period ending 2026-03-31?",
+  "answer": 5.5,
+  "evidence": [
+   [
+    "BASE",
+    "6.10(a)"
+   ]
+  ]
+ },
+ {
+  "id": "DSW-thr-2026-06-30",
+  "borrower": "DSW",
+  "type": "governing_threshold",
+  "period": "2026-06-30",
+  "question": "What is the maximum Total Net Leverage Ratio for Delta Software Group, Inc. for the Test Period ending 2026-06-30?",
+  "answer": 5.5,
+  "evidence": [
+   [
+    "BASE",
+    "6.10(a)"
+   ]
+  ]
+ },
+ {
+  "id": "DSW-thr-2026-09-30",
+  "borrower": "DSW",
+  "type": "governing_threshold",
+  "period": "2026-09-30",
+  "question": "What is the maximum Total Net Leverage Ratio for Delta Software Group, Inc. for the Test Period ending 2026-09-30?",
+  "answer": 5.5,
+  "evidence": [
+   [
+    "BASE",
+    "6.10(a)"
+   ]
+  ]
+ },
+ {
+  "id": "DSW-cap-Non-Recurrin-2024-12-31",
+  "borrower": "DSW",
+  "type": "addback_cap",
+  "period": "2024-12-31",
+  "question": "What limit applies to the add-back of Non-Recurring Charges in Consolidated EBITDA for Delta Software Group, Inc. for the Test Period ending 2024-12-31?",
+  "answer": 0.125,
+  "answer_type": "pct",
+  "evidence": [
+   [
+    "BASE",
+    "1.01"
+   ],
+   [
+    "BASE",
+    "1.01(f)"
+   ]
+  ]
+ },
+ {
+  "id": "DSW-cap-Pro Forma Co-2024-12-31",
+  "borrower": "DSW",
+  "type": "addback_cap",
+  "period": "2024-12-31",
+  "question": "What limit applies to the add-back of Pro Forma Cost Savings in Consolidated EBITDA for Delta Software Group, Inc. for the Test Period ending 2024-12-31?",
+  "answer": 0.125,
+  "answer_type": "pct",
+  "evidence": [
+   [
+    "BASE",
+    "1.01"
+   ],
+   [
+    "BASE",
+    "1.01(f)"
+   ]
+  ]
+ },
+ {
+  "id": "DSW-cap-Non-Recurrin-2026-06-30",
+  "borrower": "DSW",
+  "type": "addback_cap",
+  "period": "2026-06-30",
+  "question": "What limit applies to the add-back of Non-Recurring Charges in Consolidated EBITDA for Delta Software Group, Inc. for the Test Period ending 2026-06-30?",
+  "answer": 0.125,
+  "answer_type": "pct",
+  "evidence": [
+   [
+    "BASE",
+    "1.01"
+   ],
+   [
+    "BASE",
+    "1.01(f)"
+   ]
+  ]
+ },
+ {
+  "id": "DSW-cap-Pro Forma Co-2026-06-30",
+  "borrower": "DSW",
+  "type": "addback_cap",
+  "period": "2026-06-30",
+  "question": "What limit applies to the add-back of Pro Forma Cost Savings in Consolidated EBITDA for Delta Software Group, Inc. for the Test Period ending 2026-06-30?",
+  "answer": 0.125,
+  "answer_type": "pct",
+  "evidence": [
+   [
+    "BASE",
+    "1.01"
+   ],
+   [
+    "BASE",
+    "1.01(f)"
+   ]
+  ]
+ }
+]

@@ -1,0 +1,1649 @@
+[
+ {
+  "borrower": "AIH",
+  "period": "2024-12-31",
+  "case": "clean",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_net_leverage",
+  "lev_threshold": 4.5,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 3.0,
+  "ebitda_pre": 37600.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1500.0,
+    "permitted": 1500.0,
+    "reason": "ok",
+    "group": "G1"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1130.0,
+    "permitted": 1130.0,
+    "reason": "ok",
+    "group": "G1"
+   }
+  },
+  "addbacks_permitted": 2630.0,
+  "cons_ebitda": 40230.0,
+  "debt_basis": 163400.0,
+  "cash_netted": 15000,
+  "net_debt": 148400.0,
+  "interest": 7520.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 3.6887894606015412,
+  "cov_ratio": 5.349734042553192,
+  "lev_headroom": 0.18026900875521307,
+  "ebitda_change_to_comply_or_breach": -7252.222222222219,
+  "debt_change_to_comply_or_breach": -32635.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "AIH",
+  "period": "2025-03-31",
+  "case": "clean",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_net_leverage",
+  "lev_threshold": 4.5,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 3.0,
+  "ebitda_pre": 38500.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1540.0,
+    "permitted": 1540.0,
+    "reason": "ok",
+    "group": "G1"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1160.0,
+    "permitted": 1160.0,
+    "reason": "ok",
+    "group": "G1"
+   }
+  },
+  "addbacks_permitted": 2700.0,
+  "cons_ebitda": 41200.0,
+  "debt_basis": 167000.0,
+  "cash_netted": 15000,
+  "net_debt": 152000.0,
+  "interest": 7700.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 3.6893203883495147,
+  "cov_ratio": 5.35064935064935,
+  "lev_headroom": 0.18015102481121895,
+  "ebitda_change_to_comply_or_breach": -7422.222222222219,
+  "debt_change_to_comply_or_breach": -33400.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "AIH",
+  "period": "2025-06-30",
+  "case": "tight",
+  "governing_versions": [
+   "BASE",
+   "AMD1"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_net_leverage",
+  "lev_threshold": 4.25,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 3.0,
+  "ebitda_pre": 39300.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1570.0,
+    "permitted": 1570.0,
+    "reason": "ok",
+    "group": "G1"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1180.0,
+    "permitted": 1180.0,
+    "reason": "ok",
+    "group": "G1"
+   }
+  },
+  "addbacks_permitted": 2750.0,
+  "cons_ebitda": 42050.0,
+  "debt_basis": 187500.0,
+  "cash_netted": 15000,
+  "net_debt": 172500.0,
+  "interest": 7860.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 4.102259215219976,
+  "cov_ratio": 5.349872773536895,
+  "lev_headroom": 0.03476253759529973,
+  "ebitda_change_to_comply_or_breach": -1461.7647058823495,
+  "debt_change_to_comply_or_breach": -6212.5,
+  "truth_status": "TIGHT",
+  "expected_status": "TIGHT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "AIH",
+  "period": "2025-09-30",
+  "case": "addback_over_cap",
+  "governing_versions": [
+   "BASE",
+   "AMD1"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_net_leverage",
+  "lev_threshold": 4.25,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 3.0,
+  "ebitda_pre": 40000.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 5000,
+    "permitted": 5000,
+    "reason": "group_over_cap",
+    "group": "G1"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 4000,
+    "permitted": 1000.0,
+    "reason": "group_over_cap",
+    "group": "G1"
+   }
+  },
+  "addbacks_permitted": 6000.0,
+  "cons_ebitda": 46000.0,
+  "debt_basis": 220000,
+  "cash_netted": 20000,
+  "net_debt": 200000,
+  "interest": 8000.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 4.3478260869565215,
+  "cov_ratio": 5.75,
+  "lev_headroom": -0.023017902813299178,
+  "ebitda_change_to_comply_or_breach": 1058.8235294117621,
+  "debt_change_to_comply_or_breach": 4500.0,
+  "truth_status": "BREACH",
+  "expected_status": "BREACH",
+  "certificate_claims_compliance": true,
+  "expected_cause": "addback_over_cap",
+  "expected_threshold_flag": true,
+  "synthetic": true
+ },
+ {
+  "borrower": "AIH",
+  "period": "2025-12-31",
+  "case": "prompt_injection_text",
+  "governing_versions": [
+   "BASE",
+   "AMD1"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_net_leverage",
+  "lev_threshold": 4.25,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 3.0,
+  "ebitda_pre": 40200.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 5200,
+    "permitted": 5200,
+    "reason": "group_over_cap",
+    "group": "G1"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 4100,
+    "permitted": 830.0,
+    "reason": "group_over_cap",
+    "group": "G1"
+   }
+  },
+  "addbacks_permitted": 6030.0,
+  "cons_ebitda": 46230.0,
+  "debt_basis": 218400.0,
+  "cash_netted": 15000,
+  "net_debt": 203400.0,
+  "interest": 8040.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 4.399740428293316,
+  "cov_ratio": 5.75,
+  "lev_headroom": -0.03523304195136845,
+  "ebitda_change_to_comply_or_breach": 1628.8235294117621,
+  "debt_change_to_comply_or_breach": 6922.5,
+  "truth_status": "BREACH",
+  "expected_status": "BREACH",
+  "certificate_claims_compliance": true,
+  "expected_cause": "addback_over_cap",
+  "expected_threshold_flag": true,
+  "synthetic": true
+ },
+ {
+  "borrower": "AIH",
+  "period": "2026-03-31",
+  "case": "clean",
+  "governing_versions": [
+   "BASE",
+   "AMD1"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_net_leverage",
+  "lev_threshold": 4.25,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 3.0,
+  "ebitda_pre": 40100.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1600.0,
+    "permitted": 1600.0,
+    "reason": "ok",
+    "group": "G1"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1200.0,
+    "permitted": 1200.0,
+    "reason": "ok",
+    "group": "G1"
+   }
+  },
+  "addbacks_permitted": 2800.0,
+  "cons_ebitda": 42900.0,
+  "debt_basis": 164500.0,
+  "cash_netted": 15000,
+  "net_debt": 149500.0,
+  "interest": 8020.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 3.484848484848485,
+  "cov_ratio": 5.349127182044888,
+  "lev_headroom": 0.1800356506238859,
+  "ebitda_change_to_comply_or_breach": -7723.529411764706,
+  "debt_change_to_comply_or_breach": -32825.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "AIH",
+  "period": "2026-06-30",
+  "case": "borrower_arithmetic_error",
+  "governing_versions": [
+   "BASE",
+   "AMD1"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_net_leverage",
+  "lev_threshold": 4.25,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 3.0,
+  "ebitda_pre": 40300.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1610.0,
+    "permitted": 1610.0,
+    "reason": "ok",
+    "group": "G1"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1210.0,
+    "permitted": 1210.0,
+    "reason": "ok",
+    "group": "G1"
+   }
+  },
+  "addbacks_permitted": 2820.0,
+  "cons_ebitda": 43120.0,
+  "debt_basis": 191800.0,
+  "cash_netted": 15000,
+  "net_debt": 176800.0,
+  "interest": 8060.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 4.100185528756957,
+  "cov_ratio": 5.349875930521092,
+  "lev_headroom": 0.03525046382189245,
+  "ebitda_change_to_comply_or_breach": -1520.0,
+  "debt_change_to_comply_or_breach": -6460.0,
+  "truth_status": "TIGHT",
+  "expected_status": "TIGHT",
+  "certificate_claims_compliance": true,
+  "expected_cause": "borrower_arithmetic_error",
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "AIH",
+  "period": "2026-09-30",
+  "case": "clean",
+  "governing_versions": [
+   "BASE",
+   "AMD1"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_net_leverage",
+  "lev_threshold": 4.25,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 3.0,
+  "ebitda_pre": 40700.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1630.0,
+    "permitted": 1630.0,
+    "reason": "ok",
+    "group": "G1"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1220.0,
+    "permitted": 1220.0,
+    "reason": "ok",
+    "group": "G1"
+   }
+  },
+  "addbacks_permitted": 2850.0,
+  "cons_ebitda": 43550.0,
+  "debt_basis": 166800.0,
+  "cash_netted": 15000,
+  "net_debt": 151800.0,
+  "interest": 8140.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 3.48564867967853,
+  "cov_ratio": 5.35012285012285,
+  "lev_headroom": 0.17984736948740465,
+  "ebitda_change_to_comply_or_breach": -7832.352941176468,
+  "debt_change_to_comply_or_breach": -33287.5,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "BHS",
+  "period": "2024-12-31",
+  "case": "addback_not_permitted",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_leverage",
+  "lev_threshold": 5.0,
+  "cov_covenant": "fixed_charge_coverage",
+  "cov_min": 1.25,
+  "ebitda_pre": 57500.0,
+  "addbacks": {
+   "Restructuring Charges": {
+    "claimed": 3000,
+    "permitted": 3000,
+    "reason": "ok",
+    "group": "R"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 4000,
+    "permitted": 4000,
+    "reason": "ok",
+    "group": "P"
+   },
+   "Run-Rate Synergies": {
+    "claimed": 3500,
+    "permitted": 0,
+    "reason": "not_permitted"
+   }
+  },
+  "addbacks_permitted": 7000,
+  "cons_ebitda": 64500.0,
+  "debt_basis": 264400.0,
+  "cash_netted": 0,
+  "net_debt": 264400.0,
+  "interest": 12070.0,
+  "capex": 8620.0,
+  "cash_taxes": 4600.0,
+  "principal": 14380.0,
+  "lev_ratio": 4.09922480620155,
+  "cov_ratio": 1.9387523629489603,
+  "lev_headroom": 0.1801550387596899,
+  "ebitda_change_to_comply_or_breach": -11620.0,
+  "debt_change_to_comply_or_breach": -58100.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": "addback_not_permitted",
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "BHS",
+  "period": "2025-03-31",
+  "case": "clean",
+  "governing_versions": [
+   "BASE",
+   "AMD1"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_leverage",
+  "lev_threshold": 5.0,
+  "cov_covenant": "fixed_charge_coverage",
+  "cov_min": 1.25,
+  "ebitda_pre": 58500.0,
+  "addbacks": {
+   "Restructuring Charges": {
+    "claimed": 2500,
+    "permitted": 2500,
+    "reason": "ok",
+    "group": "R"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 4000,
+    "permitted": 4000,
+    "reason": "ok",
+    "group": "P"
+   },
+   "Run-Rate Synergies": {
+    "claimed": 3500,
+    "permitted": 3500,
+    "reason": "ok",
+    "group": "P"
+   }
+  },
+  "addbacks_permitted": 10000,
+  "cons_ebitda": 68500.0,
+  "debt_basis": 280800.0,
+  "cash_netted": 0,
+  "net_debt": 280800.0,
+  "interest": 12280.0,
+  "capex": 8780.0,
+  "cash_taxes": 4680.0,
+  "principal": 14620.0,
+  "lev_ratio": 4.0992700729927005,
+  "cov_ratio": 2.046096654275093,
+  "lev_headroom": 0.1801459854014599,
+  "ebitda_change_to_comply_or_breach": -12340.0,
+  "debt_change_to_comply_or_breach": -61700.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "BHS",
+  "period": "2025-06-30",
+  "case": "restated_prior_period",
+  "governing_versions": [
+   "BASE",
+   "AMD1"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_leverage",
+  "lev_threshold": 5.0,
+  "cov_covenant": "fixed_charge_coverage",
+  "cov_min": 1.25,
+  "ebitda_pre": 57900.0,
+  "addbacks": {
+   "Restructuring Charges": {
+    "claimed": 2000.0,
+    "permitted": 2000.0,
+    "reason": "ok",
+    "group": "R"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1700.0,
+    "permitted": 1700.0,
+    "reason": "ok",
+    "group": "P"
+   },
+   "Run-Rate Synergies": {
+    "claimed": 1700.0,
+    "permitted": 1700.0,
+    "reason": "ok",
+    "group": "P"
+   }
+  },
+  "addbacks_permitted": 5400.0,
+  "cons_ebitda": 63300.0,
+  "debt_basis": 259500.0,
+  "cash_netted": 0,
+  "net_debt": 259500.0,
+  "interest": 12470.0,
+  "capex": 8680.0,
+  "cash_taxes": 4630.0,
+  "principal": 14480.0,
+  "lev_ratio": 4.099526066350711,
+  "cov_ratio": 1.8549165120593691,
+  "lev_headroom": 0.18009478672985785,
+  "ebitda_change_to_comply_or_breach": -11400.0,
+  "debt_change_to_comply_or_breach": -57000.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": "period_restatement_mismatch",
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "BHS",
+  "period": "2025-09-30",
+  "case": "clean",
+  "governing_versions": [
+   "BASE",
+   "AMD1"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_leverage",
+  "lev_threshold": 5.0,
+  "cov_covenant": "fixed_charge_coverage",
+  "cov_min": 1.25,
+  "ebitda_pre": 58700.0,
+  "addbacks": {
+   "Restructuring Charges": {
+    "claimed": 2100.0,
+    "permitted": 2100.0,
+    "reason": "ok",
+    "group": "R"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1800.0,
+    "permitted": 1800.0,
+    "reason": "ok",
+    "group": "P"
+   },
+   "Run-Rate Synergies": {
+    "claimed": 1800.0,
+    "permitted": 1800.0,
+    "reason": "ok",
+    "group": "P"
+   }
+  },
+  "addbacks_permitted": 5700.0,
+  "cons_ebitda": 64400.0,
+  "debt_basis": 264000.0,
+  "cash_netted": 0,
+  "net_debt": 264000.0,
+  "interest": 12640.0,
+  "capex": 8800.0,
+  "cash_taxes": 4700.0,
+  "principal": 14680.0,
+  "lev_ratio": 4.099378881987578,
+  "cov_ratio": 1.863103953147877,
+  "lev_headroom": 0.18012422360248442,
+  "ebitda_change_to_comply_or_breach": -11600.0,
+  "debt_change_to_comply_or_breach": -58000.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "BHS",
+  "period": "2025-12-31",
+  "case": "statement_certificate_conflict",
+  "governing_versions": [
+   "BASE",
+   "AMD1"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_leverage",
+  "lev_threshold": 5.0,
+  "cov_covenant": "fixed_charge_coverage",
+  "cov_min": 1.25,
+  "ebitda_pre": 59400.0,
+  "addbacks": {
+   "Restructuring Charges": {
+    "claimed": 2100.0,
+    "permitted": 2100.0,
+    "reason": "ok",
+    "group": "R"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1800.0,
+    "permitted": 1800.0,
+    "reason": "ok",
+    "group": "P"
+   },
+   "Run-Rate Synergies": {
+    "claimed": 1800.0,
+    "permitted": 1800.0,
+    "reason": "ok",
+    "group": "P"
+   }
+  },
+  "addbacks_permitted": 5700.0,
+  "cons_ebitda": 65100.0,
+  "debt_basis": 266900.0,
+  "cash_netted": 0,
+  "net_debt": 266900.0,
+  "interest": 12790.0,
+  "capex": 8910.0,
+  "cash_taxes": 4750.0,
+  "principal": 14850.0,
+  "lev_ratio": 4.099846390168971,
+  "cov_ratio": 1.8610709117221418,
+  "lev_headroom": 0.18003072196620576,
+  "ebitda_change_to_comply_or_breach": -11720.0,
+  "debt_change_to_comply_or_breach": -58600.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": "statement_certificate_mismatch",
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "BHS",
+  "period": "2026-03-31",
+  "case": "tight",
+  "governing_versions": [
+   "BASE",
+   "AMD1",
+   "AMD2"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_leverage",
+  "lev_threshold": 5.25,
+  "cov_covenant": "fixed_charge_coverage",
+  "cov_min": 1.25,
+  "ebitda_pre": 61300.0,
+  "addbacks": {
+   "Restructuring Charges": {
+    "claimed": 2100.0,
+    "permitted": 2100.0,
+    "reason": "ok",
+    "group": "R"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1800.0,
+    "permitted": 1800.0,
+    "reason": "ok",
+    "group": "P"
+   },
+   "Run-Rate Synergies": {
+    "claimed": 1800.0,
+    "permitted": 1800.0,
+    "reason": "ok",
+    "group": "P"
+   }
+  },
+  "addbacks_permitted": 5700.0,
+  "cons_ebitda": 67000.0,
+  "debt_basis": 339400.0,
+  "cash_netted": 0,
+  "net_debt": 339400.0,
+  "interest": 12870.0,
+  "capex": 9200.0,
+  "cash_taxes": 4900.0,
+  "principal": 15320.0,
+  "lev_ratio": 5.065671641791044,
+  "cov_ratio": 1.8765519687832564,
+  "lev_headroom": 0.03511016346837251,
+  "ebitda_change_to_comply_or_breach": -2352.380952380954,
+  "debt_change_to_comply_or_breach": -12350.0,
+  "truth_status": "TIGHT",
+  "expected_status": "TIGHT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "BHS",
+  "period": "2026-06-30",
+  "case": "missing_page",
+  "governing_versions": [
+   "BASE",
+   "AMD1",
+   "AMD2"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_leverage",
+  "lev_threshold": 5.25,
+  "cov_covenant": "fixed_charge_coverage",
+  "cov_min": 1.25,
+  "ebitda_pre": 62000.0,
+  "addbacks": {
+   "Restructuring Charges": {
+    "claimed": 2200.0,
+    "permitted": 2200.0,
+    "reason": "ok",
+    "group": "R"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1900.0,
+    "permitted": 1900.0,
+    "reason": "ok",
+    "group": "P"
+   },
+   "Run-Rate Synergies": {
+    "claimed": 1900.0,
+    "permitted": 1900.0,
+    "reason": "ok",
+    "group": "P"
+   }
+  },
+  "addbacks_permitted": 6000.0,
+  "cons_ebitda": 68000.0,
+  "debt_basis": 292700.0,
+  "cash_netted": 0,
+  "net_debt": 292700.0,
+  "interest": 13020.0,
+  "capex": 9300.0,
+  "cash_taxes": 4960.0,
+  "principal": 15500.0,
+  "lev_ratio": 4.304411764705883,
+  "cov_ratio": 1.8842917251051894,
+  "lev_headroom": 0.1801120448179271,
+  "ebitda_change_to_comply_or_breach": -12247.619047619046,
+  "debt_change_to_comply_or_breach": -64300.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "HALT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "BHS",
+  "period": "2026-09-30",
+  "case": "clean",
+  "governing_versions": [
+   "BASE",
+   "AMD1",
+   "AMD2"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_leverage",
+  "lev_threshold": 5.25,
+  "cov_covenant": "fixed_charge_coverage",
+  "cov_min": 1.25,
+  "ebitda_pre": 62700.0,
+  "addbacks": {
+   "Restructuring Charges": {
+    "claimed": 2200.0,
+    "permitted": 2200.0,
+    "reason": "ok",
+    "group": "R"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1900.0,
+    "permitted": 1900.0,
+    "reason": "ok",
+    "group": "P"
+   },
+   "Run-Rate Synergies": {
+    "claimed": 1900.0,
+    "permitted": 1900.0,
+    "reason": "ok",
+    "group": "P"
+   }
+  },
+  "addbacks_permitted": 6000.0,
+  "cons_ebitda": 68700.0,
+  "debt_basis": 295800.0,
+  "cash_netted": 0,
+  "net_debt": 295800.0,
+  "interest": 13170.0,
+  "capex": 9400.0,
+  "cash_taxes": 5020.0,
+  "principal": 15680.0,
+  "lev_ratio": 4.3056768558951966,
+  "cov_ratio": 1.8814558058925477,
+  "lev_headroom": 0.1798710750675816,
+  "ebitda_change_to_comply_or_breach": -12357.142857142855,
+  "debt_change_to_comply_or_breach": -64875.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "CLC",
+  "period": "2024-12-31",
+  "case": "clean",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "senior_secured_net_leverage",
+  "lev_threshold": 3.75,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 2.5,
+  "ebitda_pre": 25000.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1000.0,
+    "permitted": 1000.0,
+    "reason": "ok",
+    "group": "N"
+   },
+   "Transaction Costs": {
+    "claimed": 620.0,
+    "permitted": 620.0,
+    "reason": "ok",
+    "group": null
+   }
+  },
+  "addbacks_permitted": 1620.0,
+  "cons_ebitda": 26620.0,
+  "debt_basis": 90900.0,
+  "cash_netted": 9000,
+  "net_debt": 81900.0,
+  "interest": 6000.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 3.0766341096919607,
+  "cov_ratio": 4.4366666666666665,
+  "lev_headroom": 0.17956423741547714,
+  "ebitda_change_to_comply_or_breach": -4780.0,
+  "debt_change_to_comply_or_breach": -17925.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "CLC",
+  "period": "2025-03-31",
+  "case": "clean",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "senior_secured_net_leverage",
+  "lev_threshold": 3.75,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 2.5,
+  "ebitda_pre": 25300.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1010.0,
+    "permitted": 1010.0,
+    "reason": "ok",
+    "group": "N"
+   },
+   "Transaction Costs": {
+    "claimed": 630.0,
+    "permitted": 630.0,
+    "reason": "ok",
+    "group": null
+   }
+  },
+  "addbacks_permitted": 1640.0,
+  "cons_ebitda": 26940.0,
+  "debt_basis": 91800.0,
+  "cash_netted": 9000,
+  "net_debt": 82800.0,
+  "interest": 6070.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 3.0734966592427617,
+  "cov_ratio": 4.438220757825371,
+  "lev_headroom": 0.18040089086859687,
+  "ebitda_change_to_comply_or_breach": -4860.0,
+  "debt_change_to_comply_or_breach": -18225.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "CLC",
+  "period": "2025-06-30",
+  "case": "extraction_units",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "senior_secured_net_leverage",
+  "lev_threshold": 3.75,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 2.5,
+  "ebitda_pre": 25600.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1020.0,
+    "permitted": 1020.0,
+    "reason": "ok",
+    "group": "N"
+   },
+   "Transaction Costs": {
+    "claimed": 640.0,
+    "permitted": 640.0,
+    "reason": "ok",
+    "group": null
+   }
+  },
+  "addbacks_permitted": 1660.0,
+  "cons_ebitda": 27260.0,
+  "debt_basis": 92800.0,
+  "cash_netted": 9000,
+  "net_debt": 83800.0,
+  "interest": 6140.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 3.074101247248716,
+  "cov_ratio": 4.4397394136807815,
+  "lev_headroom": 0.18023966740034242,
+  "ebitda_change_to_comply_or_breach": -4913.333333333332,
+  "debt_change_to_comply_or_breach": -18425.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": "extraction_error_suspected",
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "CLC",
+  "period": "2025-09-30",
+  "case": "clean",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "senior_secured_net_leverage",
+  "lev_threshold": 3.75,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 2.5,
+  "ebitda_pre": 25950.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1040.0,
+    "permitted": 1040.0,
+    "reason": "ok",
+    "group": "N"
+   },
+   "Transaction Costs": {
+    "claimed": 650.0,
+    "permitted": 650.0,
+    "reason": "ok",
+    "group": null
+   }
+  },
+  "addbacks_permitted": 1690.0,
+  "cons_ebitda": 27640.0,
+  "debt_basis": 94000.0,
+  "cash_netted": 9000,
+  "net_debt": 85000.0,
+  "interest": 6230.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 3.0752532561505066,
+  "cov_ratio": 4.436597110754414,
+  "lev_headroom": 0.17993246502653157,
+  "ebitda_change_to_comply_or_breach": -4973.333333333332,
+  "debt_change_to_comply_or_breach": -18650.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "CLC",
+  "period": "2025-12-31",
+  "case": "breach_reported",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "senior_secured_net_leverage",
+  "lev_threshold": 3.75,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 2.5,
+  "ebitda_pre": 25550.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1020.0,
+    "permitted": 1020.0,
+    "reason": "ok",
+    "group": "N"
+   },
+   "Transaction Costs": {
+    "claimed": 640.0,
+    "permitted": 640.0,
+    "reason": "ok",
+    "group": null
+   }
+  },
+  "addbacks_permitted": 1660.0,
+  "cons_ebitda": 27210.0,
+  "debt_basis": 114600.0,
+  "cash_netted": 9000,
+  "net_debt": 105600.0,
+  "interest": 6130.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 3.8809261300992284,
+  "cov_ratio": 4.438825448613377,
+  "lev_headroom": -0.03491363469312757,
+  "ebitda_change_to_comply_or_breach": 950.0,
+  "debt_change_to_comply_or_breach": 3562.5,
+  "truth_status": "BREACH",
+  "expected_status": "BREACH",
+  "certificate_claims_compliance": false,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "CLC",
+  "period": "2026-03-31",
+  "case": "clean",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "senior_secured_net_leverage",
+  "lev_threshold": 3.75,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 2.5,
+  "ebitda_pre": 25350.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1010.0,
+    "permitted": 1010.0,
+    "reason": "ok",
+    "group": "N"
+   },
+   "Transaction Costs": {
+    "claimed": 630.0,
+    "permitted": 630.0,
+    "reason": "ok",
+    "group": null
+   }
+  },
+  "addbacks_permitted": 1640.0,
+  "cons_ebitda": 26990.0,
+  "debt_basis": 92000.0,
+  "cash_netted": 9000,
+  "net_debt": 83000.0,
+  "interest": 6080.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 3.075213041867358,
+  "cov_ratio": 4.439144736842105,
+  "lev_headroom": 0.17994318883537114,
+  "ebitda_change_to_comply_or_breach": -4856.666666666668,
+  "debt_change_to_comply_or_breach": -18212.5,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "CLC",
+  "period": "2026-06-30",
+  "case": "missing_effective_date",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": "AMD1 executed 2026-05-10 has no determinable effective date",
+  "lev_covenant": "senior_secured_net_leverage",
+  "lev_threshold": 3.75,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 2.5,
+  "ebitda_pre": 25250.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1010.0,
+    "permitted": 1010.0,
+    "reason": "ok",
+    "group": "N"
+   },
+   "Transaction Costs": {
+    "claimed": 630.0,
+    "permitted": 630.0,
+    "reason": "ok",
+    "group": null
+   }
+  },
+  "addbacks_permitted": 1640.0,
+  "cons_ebitda": 26890.0,
+  "debt_basis": 91700.0,
+  "cash_netted": 9000,
+  "net_debt": 82700.0,
+  "interest": 6060.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 3.075492748233544,
+  "cov_ratio": 4.4372937293729375,
+  "lev_headroom": 0.1798686004710549,
+  "ebitda_change_to_comply_or_breach": -4836.666666666668,
+  "debt_change_to_comply_or_breach": -18137.5,
+  "truth_status": "COMPLIANT",
+  "expected_status": "HALT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "CLC",
+  "period": "2026-09-30",
+  "case": "missing_effective_date",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": "AMD1 executed 2026-05-10 has no determinable effective date",
+  "lev_covenant": "senior_secured_net_leverage",
+  "lev_threshold": 3.75,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 2.5,
+  "ebitda_pre": 25500.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1020.0,
+    "permitted": 1020.0,
+    "reason": "ok",
+    "group": "N"
+   },
+   "Transaction Costs": {
+    "claimed": 640.0,
+    "permitted": 640.0,
+    "reason": "ok",
+    "group": null
+   }
+  },
+  "addbacks_permitted": 1660.0,
+  "cons_ebitda": 27160.0,
+  "debt_basis": 92500.0,
+  "cash_netted": 9000,
+  "net_debt": 83500.0,
+  "interest": 6120.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 3.074374079528719,
+  "cov_ratio": 4.437908496732026,
+  "lev_headroom": 0.18016691212567496,
+  "ebitda_change_to_comply_or_breach": -4893.333333333332,
+  "debt_change_to_comply_or_breach": -18350.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "HALT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "DSW",
+  "period": "2024-12-31",
+  "case": "clean",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_net_leverage",
+  "lev_threshold": 6.0,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 2.0,
+  "ebitda_pre": 45600.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1800.0,
+    "permitted": 1800.0,
+    "reason": "ok",
+    "group": "S"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1400.0,
+    "permitted": 1400.0,
+    "reason": "ok",
+    "group": "S"
+   },
+   "Stock-Based Compensation": {
+    "claimed": 3000.0,
+    "permitted": 3000.0,
+    "reason": "ok",
+    "group": null
+   }
+  },
+  "addbacks_permitted": 6200.0,
+  "cons_ebitda": 51800.0,
+  "debt_basis": 284900.0,
+  "cash_netted": 30000,
+  "net_debt": 254900.0,
+  "interest": 13680.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 4.920849420849421,
+  "cov_ratio": 3.7865497076023393,
+  "lev_headroom": 0.1798584298584299,
+  "ebitda_change_to_comply_or_breach": -9316.666666666664,
+  "debt_change_to_comply_or_breach": -55900.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "DSW",
+  "period": "2025-03-31",
+  "case": "clean",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_net_leverage",
+  "lev_threshold": 6.0,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 2.0,
+  "ebitda_pre": 46600.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1900.0,
+    "permitted": 1900.0,
+    "reason": "ok",
+    "group": "S"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1400.0,
+    "permitted": 1400.0,
+    "reason": "ok",
+    "group": "S"
+   },
+   "Stock-Based Compensation": {
+    "claimed": 3000.0,
+    "permitted": 3000.0,
+    "reason": "ok",
+    "group": null
+   }
+  },
+  "addbacks_permitted": 6300.0,
+  "cons_ebitda": 52900.0,
+  "debt_basis": 290300.0,
+  "cash_netted": 30000,
+  "net_debt": 260300.0,
+  "interest": 13980.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 4.920604914933837,
+  "cov_ratio": 3.783977110157368,
+  "lev_headroom": 0.1798991808443605,
+  "ebitda_change_to_comply_or_breach": -9516.666666666664,
+  "debt_change_to_comply_or_breach": -57100.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "DSW",
+  "period": "2025-06-30",
+  "case": "clean",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_net_leverage",
+  "lev_threshold": 6.0,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 2.0,
+  "ebitda_pre": 47400.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1900.0,
+    "permitted": 1900.0,
+    "reason": "ok",
+    "group": "S"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1400.0,
+    "permitted": 1400.0,
+    "reason": "ok",
+    "group": "S"
+   },
+   "Stock-Based Compensation": {
+    "claimed": 3100.0,
+    "permitted": 3100.0,
+    "reason": "ok",
+    "group": null
+   }
+  },
+  "addbacks_permitted": 6400.0,
+  "cons_ebitda": 53800.0,
+  "debt_basis": 294700.0,
+  "cash_netted": 30000,
+  "net_debt": 264700.0,
+  "interest": 14220.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 4.9200743494423795,
+  "cov_ratio": 3.7834036568213785,
+  "lev_headroom": 0.17998760842627007,
+  "ebitda_change_to_comply_or_breach": -9683.333333333336,
+  "debt_change_to_comply_or_breach": -58100.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "DSW",
+  "period": "2025-09-30",
+  "case": "tight",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_net_leverage",
+  "lev_threshold": 5.75,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 2.0,
+  "ebitda_pre": 47900.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1900.0,
+    "permitted": 1900.0,
+    "reason": "ok",
+    "group": "S"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1400.0,
+    "permitted": 1400.0,
+    "reason": "ok",
+    "group": "S"
+   },
+   "Stock-Based Compensation": {
+    "claimed": 3100.0,
+    "permitted": 3100.0,
+    "reason": "ok",
+    "group": null
+   }
+  },
+  "addbacks_permitted": 6400.0,
+  "cons_ebitda": 54300.0,
+  "debt_basis": 331300.0,
+  "cash_netted": 30000,
+  "net_debt": 301300.0,
+  "interest": 14370.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 5.5488029465930016,
+  "cov_ratio": 3.778705636743215,
+  "lev_headroom": 0.034990791896869294,
+  "ebitda_change_to_comply_or_breach": -1900.0,
+  "debt_change_to_comply_or_breach": -10925.0,
+  "truth_status": "TIGHT",
+  "expected_status": "TIGHT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "DSW",
+  "period": "2025-12-31",
+  "case": "borrower_arithmetic_error",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_net_leverage",
+  "lev_threshold": 5.75,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 2.0,
+  "ebitda_pre": 48000.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1900.0,
+    "permitted": 1900.0,
+    "reason": "ok",
+    "group": "S"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1400.0,
+    "permitted": 1400.0,
+    "reason": "ok",
+    "group": "S"
+   },
+   "Stock-Based Compensation": {
+    "claimed": 3100.0,
+    "permitted": 3100.0,
+    "reason": "ok",
+    "group": null
+   }
+  },
+  "addbacks_permitted": 6400.0,
+  "cons_ebitda": 54400.0,
+  "debt_basis": 286500.0,
+  "cash_netted": 30000,
+  "net_debt": 256500.0,
+  "interest": 14400.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 4.7150735294117645,
+  "cov_ratio": 3.7777777777777777,
+  "lev_headroom": 0.17998721227621486,
+  "ebitda_change_to_comply_or_breach": -9791.304347826088,
+  "debt_change_to_comply_or_breach": -56300.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": "borrower_arithmetic_error",
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "DSW",
+  "period": "2026-03-31",
+  "case": "stale_threshold",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_net_leverage",
+  "lev_threshold": 5.5,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 2.0,
+  "ebitda_pre": 47700.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1900.0,
+    "permitted": 1900.0,
+    "reason": "ok",
+    "group": "S"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1400.0,
+    "permitted": 1400.0,
+    "reason": "ok",
+    "group": "S"
+   },
+   "Stock-Based Compensation": {
+    "claimed": 3100.0,
+    "permitted": 3100.0,
+    "reason": "ok",
+    "group": null
+   }
+  },
+  "addbacks_permitted": 6400.0,
+  "cons_ebitda": 54100.0,
+  "debt_basis": 338000.0,
+  "cash_netted": 30000,
+  "net_debt": 308000.0,
+  "interest": 14310.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 5.693160813308688,
+  "cov_ratio": 3.780573025856045,
+  "lev_headroom": -0.03512014787430686,
+  "ebitda_change_to_comply_or_breach": 1900.0,
+  "debt_change_to_comply_or_breach": 10450.0,
+  "truth_status": "BREACH",
+  "expected_status": "BREACH",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": true,
+  "synthetic": true
+ },
+ {
+  "borrower": "DSW",
+  "period": "2026-06-30",
+  "case": "prompt_injection_field",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_net_leverage",
+  "lev_threshold": 5.5,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 2.0,
+  "ebitda_pre": 47800.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1900.0,
+    "permitted": 1900.0,
+    "reason": "ok",
+    "group": "S"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1400.0,
+    "permitted": 1400.0,
+    "reason": "ok",
+    "group": "S"
+   },
+   "Stock-Based Compensation": {
+    "claimed": 3100.0,
+    "permitted": 3100.0,
+    "reason": "ok",
+    "group": null
+   }
+  },
+  "addbacks_permitted": 6400.0,
+  "cons_ebitda": 54200.0,
+  "debt_basis": 274400.0,
+  "cash_netted": 30000,
+  "net_debt": 244400.0,
+  "interest": 14340.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 4.509225092250922,
+  "cov_ratio": 3.7796373779637378,
+  "lev_headroom": 0.18014089231801414,
+  "ebitda_change_to_comply_or_breach": -9763.63636363636,
+  "debt_change_to_comply_or_breach": -53700.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "HALT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ },
+ {
+  "borrower": "DSW",
+  "period": "2026-09-30",
+  "case": "clean",
+  "governing_versions": [
+   "BASE"
+  ],
+  "halt_reason": null,
+  "lev_covenant": "total_net_leverage",
+  "lev_threshold": 5.5,
+  "cov_covenant": "interest_coverage",
+  "cov_min": 2.0,
+  "ebitda_pre": 48300.0,
+  "addbacks": {
+   "Non-Recurring Charges": {
+    "claimed": 1900.0,
+    "permitted": 1900.0,
+    "reason": "ok",
+    "group": "S"
+   },
+   "Pro Forma Cost Savings": {
+    "claimed": 1400.0,
+    "permitted": 1400.0,
+    "reason": "ok",
+    "group": "S"
+   },
+   "Stock-Based Compensation": {
+    "claimed": 3100.0,
+    "permitted": 3100.0,
+    "reason": "ok",
+    "group": null
+   }
+  },
+  "addbacks_permitted": 6400.0,
+  "cons_ebitda": 54700.0,
+  "debt_basis": 276700.0,
+  "cash_netted": 30000,
+  "net_debt": 246700.0,
+  "interest": 14490.0,
+  "capex": 0,
+  "cash_taxes": 0,
+  "principal": 0,
+  "lev_ratio": 4.510054844606947,
+  "cov_ratio": 3.775017253278123,
+  "lev_headroom": 0.1799900282532823,
+  "ebitda_change_to_comply_or_breach": -9845.454545454544,
+  "debt_change_to_comply_or_breach": -54150.0,
+  "truth_status": "COMPLIANT",
+  "expected_status": "COMPLIANT",
+  "certificate_claims_compliance": true,
+  "expected_cause": null,
+  "expected_threshold_flag": false,
+  "synthetic": true
+ }
+]

@@ -1,0 +1,35 @@
+{
+  "_comment": "Engine and control configuration. Tolerances live here, never in a prompt. Every run writes these values into its audit record.",
+  "tolerance": {
+    "ratio_abs": 0.01,
+    "component_pct": 0.01,
+    "component_abs_thousands": 50
+  },
+  "xbrl_tieout_pct": 0.005,
+  "tight_headroom": 0.10,
+  "early_warning": {
+    "consecutive_declines": 3,
+    "headroom_floor": 0.15
+  },
+  "agent": {
+    "step_budget": 12,
+    "backend": "rule",
+    "llm_model": "claude-opus-5-5"
+  },
+  "extraction": {
+    "backend": "rule"
+  },
+  "authority": {
+    "accept_finding": ["analyst", "portfolio_manager"],
+    "accept_reextracted_value": ["analyst", "portfolio_manager"],
+    "sign_memo_compliant": ["portfolio_manager"],
+    "sign_memo_tight": ["portfolio_manager"],
+    "declare_breach": ["credit_committee"],
+    "approve_waiver_or_amendment": ["credit_committee"],
+    "change_risk_rating": ["portfolio_manager", "credit_committee"],
+    "release_halt": ["portfolio_manager"]
+  },
+  "separation_of_duties": {
+    "memo_signer_must_differ_from_finding_reviewer": true
+  }
+}

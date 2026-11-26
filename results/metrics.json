@@ -1,0 +1,962 @@
+{
+ "generated_utc": "2026-11-26T22:46:40Z",
+ "data": "synthetic (see data/README.md)",
+ "investigator_backend": "rule",
+ "extractor_backend": "rule_pass1",
+ "extraction": {
+  "rule_pass1": {
+   "statements": {
+    "fields": 744,
+    "correct": 739,
+    "anomaly_flagged": 0,
+    "accuracy": 0.9933
+   },
+   "certificate": {
+    "fields": 331,
+    "correct": 330,
+    "anomaly_flagged": 1,
+    "accuracy": 0.997
+   }
+  },
+  "pagewise_pass2": {
+   "statements": {
+    "fields": 744,
+    "correct": 744,
+    "anomaly_flagged": 0,
+    "accuracy": 1.0
+   },
+   "certificate": {
+    "fields": 331,
+    "correct": 330,
+    "anomaly_flagged": 1,
+    "accuracy": 0.997
+   }
+  }
+ },
+ "xbrl_tieout": {
+  "fields_checked": 192,
+  "tied_first_pass": 190,
+  "rate": 0.9896,
+  "recovered_by_second_read": 2
+ },
+ "kg": {
+  "AIH": {
+   "nodes_gold": 9,
+   "node_precision": 1.0,
+   "node_recall": 1.0,
+   "edges_gold": 9,
+   "edge_precision": 1.0,
+   "edge_recall": 1.0,
+   "extra_edges": [],
+   "missing_edges": [],
+   "attribute_errors": []
+  },
+  "BHS": {
+   "nodes_gold": 13,
+   "node_precision": 1.0,
+   "node_recall": 1.0,
+   "edges_gold": 14,
+   "edge_precision": 0.9333333333333333,
+   "edge_recall": 1.0,
+   "extra_edges": [
+    [
+     "addback:Run-Rate Synergies",
+     "cap:1.01(e):BASE",
+     "capped_by"
+    ]
+   ],
+   "missing_edges": [],
+   "attribute_errors": []
+  },
+  "CLC": {
+   "nodes_gold": 9,
+   "node_precision": 1.0,
+   "node_recall": 1.0,
+   "edges_gold": 8,
+   "edge_precision": 1.0,
+   "edge_recall": 1.0,
+   "extra_edges": [],
+   "missing_edges": [],
+   "attribute_errors": []
+  },
+  "DSW": {
+   "nodes_gold": 10,
+   "node_precision": 1.0,
+   "node_recall": 1.0,
+   "edges_gold": 10,
+   "edge_precision": 1.0,
+   "edge_recall": 1.0,
+   "extra_edges": [],
+   "missing_edges": [],
+   "attribute_errors": []
+  }
+ },
+ "version_selection": {
+  "periods": 32,
+  "correct": 32,
+  "accuracy": 1.0,
+  "rows": [
+   {
+    "borrower": "AIH",
+    "period": "2024-12-31",
+    "versions": [
+     "BASE"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "AIH",
+    "period": "2025-03-31",
+    "versions": [
+     "BASE"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "AIH",
+    "period": "2025-06-30",
+    "versions": [
+     "BASE",
+     "AMD1"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "AIH",
+    "period": "2025-09-30",
+    "versions": [
+     "BASE",
+     "AMD1"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "AIH",
+    "period": "2025-12-31",
+    "versions": [
+     "BASE",
+     "AMD1"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "AIH",
+    "period": "2026-03-31",
+    "versions": [
+     "BASE",
+     "AMD1"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "AIH",
+    "period": "2026-06-30",
+    "versions": [
+     "BASE",
+     "AMD1"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "AIH",
+    "period": "2026-09-30",
+    "versions": [
+     "BASE",
+     "AMD1"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "BHS",
+    "period": "2024-12-31",
+    "versions": [
+     "BASE"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "BHS",
+    "period": "2025-03-31",
+    "versions": [
+     "BASE",
+     "AMD1"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "BHS",
+    "period": "2025-06-30",
+    "versions": [
+     "BASE",
+     "AMD1"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "BHS",
+    "period": "2025-09-30",
+    "versions": [
+     "BASE",
+     "AMD1"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "BHS",
+    "period": "2025-12-31",
+    "versions": [
+     "BASE",
+     "AMD1"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "BHS",
+    "period": "2026-03-31",
+    "versions": [
+     "BASE",
+     "AMD1",
+     "AMD2"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "BHS",
+    "period": "2026-06-30",
+    "versions": [
+     "BASE",
+     "AMD1",
+     "AMD2"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "BHS",
+    "period": "2026-09-30",
+    "versions": [
+     "BASE",
+     "AMD1",
+     "AMD2"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "CLC",
+    "period": "2024-12-31",
+    "versions": [
+     "BASE"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "CLC",
+    "period": "2025-03-31",
+    "versions": [
+     "BASE"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "CLC",
+    "period": "2025-06-30",
+    "versions": [
+     "BASE"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "CLC",
+    "period": "2025-09-30",
+    "versions": [
+     "BASE"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "CLC",
+    "period": "2025-12-31",
+    "versions": [
+     "BASE"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "CLC",
+    "period": "2026-03-31",
+    "versions": [
+     "BASE"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "CLC",
+    "period": "2026-06-30",
+    "versions": [
+     "BASE"
+    ],
+    "halt": true,
+    "ok": true
+   },
+   {
+    "borrower": "CLC",
+    "period": "2026-09-30",
+    "versions": [
+     "BASE"
+    ],
+    "halt": true,
+    "ok": true
+   },
+   {
+    "borrower": "DSW",
+    "period": "2024-12-31",
+    "versions": [
+     "BASE"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "DSW",
+    "period": "2025-03-31",
+    "versions": [
+     "BASE"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "DSW",
+    "period": "2025-06-30",
+    "versions": [
+     "BASE"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "DSW",
+    "period": "2025-09-30",
+    "versions": [
+     "BASE"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "DSW",
+    "period": "2025-12-31",
+    "versions": [
+     "BASE"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "DSW",
+    "period": "2026-03-31",
+    "versions": [
+     "BASE"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "DSW",
+    "period": "2026-06-30",
+    "versions": [
+     "BASE"
+    ],
+    "halt": false,
+    "ok": true
+   },
+   {
+    "borrower": "DSW",
+    "period": "2026-09-30",
+    "versions": [
+     "BASE"
+    ],
+    "halt": false,
+    "ok": true
+   }
+  ]
+ },
+ "retrieval": {
+  "kg": {
+   "all": {
+    "questions": 47,
+    "answer_accuracy": 1.0,
+    "full_evidence_rate": 1.0,
+    "mean_evidence_recall": 1.0
+   },
+   "governing_threshold": {
+    "questions": 30,
+    "answer_accuracy": 1.0,
+    "full_evidence_rate": 1.0,
+    "mean_evidence_recall": 1.0
+   },
+   "addback_cap": {
+    "questions": 15,
+    "answer_accuracy": 1.0,
+    "full_evidence_rate": 1.0,
+    "mean_evidence_recall": 1.0
+   },
+   "addback_permitted": {
+    "questions": 2,
+    "answer_accuracy": 1.0,
+    "full_evidence_rate": 1.0,
+    "mean_evidence_recall": 1.0
+   }
+  },
+  "chunk_tfidf_top3": {
+   "all": {
+    "questions": 47,
+    "answer_accuracy": 0.532,
+    "full_evidence_rate": 0.574,
+    "mean_evidence_recall": 0.745
+   },
+   "governing_threshold": {
+    "questions": 30,
+    "answer_accuracy": 0.533,
+    "full_evidence_rate": 0.7,
+    "mean_evidence_recall": 0.8
+   },
+   "addback_cap": {
+    "questions": 15,
+    "answer_accuracy": 0.533,
+    "full_evidence_rate": 0.4,
+    "mean_evidence_recall": 0.711
+   },
+   "addback_permitted": {
+    "questions": 2,
+    "answer_accuracy": 0.5,
+    "full_evidence_rate": 0.0,
+    "mean_evidence_recall": 0.167
+   }
+  },
+  "chunk_failure_examples": [
+   {
+    "id": "AIH-thr-2025-06-30",
+    "expected": 4.25,
+    "chunk_answer": 4.5,
+    "top_chunks": [
+     "BASE:1.01(i)",
+     "BASE:7.11(a)",
+     "AMD1:A0"
+    ]
+   },
+   {
+    "id": "AIH-thr-2025-09-30",
+    "expected": 4.25,
+    "chunk_answer": 4.5,
+    "top_chunks": [
+     "BASE:1.01(i)",
+     "BASE:7.11(a)",
+     "AMD1:A0"
+    ]
+   },
+   {
+    "id": "AIH-thr-2025-12-31",
+    "expected": 4.25,
+    "chunk_answer": 4.5,
+    "top_chunks": [
+     "BASE:1.01(i)",
+     "BASE:7.11(a)",
+     "AMD1:A0"
+    ]
+   },
+   {
+    "id": "AIH-thr-2026-03-31",
+    "expected": 4.25,
+    "chunk_answer": 4.5,
+    "top_chunks": [
+     "BASE:1.01(i)",
+     "BASE:7.11(a)",
+     "AMD1:A0"
+    ]
+   },
+   {
+    "id": "AIH-thr-2026-06-30",
+    "expected": 4.25,
+    "chunk_answer": 4.5,
+    "top_chunks": [
+     "BASE:1.01(i)",
+     "BASE:7.11(a)",
+     "AMD1:A0"
+    ]
+   },
+   {
+    "id": "AIH-thr-2026-09-30",
+    "expected": 4.25,
+    "chunk_answer": 4.5,
+    "top_chunks": [
+     "BASE:1.01(i)",
+     "BASE:7.11(a)",
+     "AMD1:A0"
+    ]
+   },
+   {
+    "id": "AIH-cap-Non-Recurrin-2024-12-31",
+    "expected": 0.15,
+    "chunk_answer": null,
+    "top_chunks": [
+     "BASE:1.01",
+     "BASE:0",
+     "AMD1:A0"
+    ]
+   },
+   {
+    "id": "AIH-cap-Pro Forma Co-2024-12-31",
+    "expected": 0.15,
+    "chunk_answer": null,
+    "top_chunks": [
+     "BASE:1.01",
+     "BASE:0",
+     "AMD1:A0"
+    ]
+   }
+  ]
+ },
+ "engine_vs_answer_key": {
+  "runs_with_status": 28,
+  "max_abs_error_leverage": 0.0,
+  "max_abs_error_coverage": 0.0
+ },
+ "status": {
+  "system": {
+   "confusion": {
+    "COMPLIANT": {
+     "COMPLIANT": 20,
+     "TIGHT": 0,
+     "BREACH": 0,
+     "HALT": 0
+    },
+    "TIGHT": {
+     "COMPLIANT": 0,
+     "TIGHT": 4,
+     "BREACH": 0,
+     "HALT": 0
+    },
+    "BREACH": {
+     "COMPLIANT": 0,
+     "TIGHT": 0,
+     "BREACH": 4,
+     "HALT": 0
+    },
+    "HALT": {
+     "COMPLIANT": 0,
+     "TIGHT": 0,
+     "BREACH": 0,
+     "HALT": 4
+    }
+   },
+   "breaches": 4,
+   "detected": 4,
+   "missed": 0,
+   "false_breach": 0,
+   "halt_cases_reported_as_compliant": 0,
+   "exact_status_match": 32,
+   "n": 32
+  },
+  "baseline_certificate_trust": {
+   "confusion": {
+    "COMPLIANT": {
+     "COMPLIANT": 24,
+     "TIGHT": 0,
+     "BREACH": 0,
+     "HALT": 0
+    },
+    "TIGHT": {
+     "COMPLIANT": 0,
+     "TIGHT": 0,
+     "BREACH": 0,
+     "HALT": 0
+    },
+    "BREACH": {
+     "COMPLIANT": 3,
+     "TIGHT": 0,
+     "BREACH": 1,
+     "HALT": 0
+    },
+    "HALT": {
+     "COMPLIANT": 4,
+     "TIGHT": 0,
+     "BREACH": 0,
+     "HALT": 0
+    }
+   },
+   "breaches": 4,
+   "detected": 1,
+   "missed": 3,
+   "false_breach": 0,
+   "halt_cases_reported_as_compliant": 4,
+   "exact_status_match": 21,
+   "n": 32
+  },
+  "baseline_stale_spreadsheet": {
+   "confusion": {
+    "COMPLIANT": {
+     "COMPLIANT": 20,
+     "TIGHT": 0,
+     "BREACH": 0,
+     "HALT": 0
+    },
+    "TIGHT": {
+     "COMPLIANT": 0,
+     "TIGHT": 3,
+     "BREACH": 1,
+     "HALT": 0
+    },
+    "BREACH": {
+     "COMPLIANT": 0,
+     "TIGHT": 2,
+     "BREACH": 2,
+     "HALT": 0
+    },
+    "HALT": {
+     "COMPLIANT": 4,
+     "TIGHT": 0,
+     "BREACH": 0,
+     "HALT": 0
+    }
+   },
+   "breaches": 4,
+   "detected": 2,
+   "missed": 2,
+   "false_breach": 1,
+   "halt_cases_reported_as_compliant": 4,
+   "exact_status_match": 25,
+   "n": 32
+  },
+  "baseline_single_prompt_llm": "not run offline - see eval/llm_baseline.py (requires ANTHROPIC_API_KEY)"
+ },
+ "discrepancy": {
+  "seeded": 8,
+  "detected": 8,
+  "cause_exact": 8,
+  "findings_on_unseeded_runs": 0,
+  "rows": [
+   {
+    "case": "addback_over_cap",
+    "borrower": "AIH",
+    "period": "2025-09-30",
+    "expected": "addback_over_cap",
+    "proposed": [
+     "addback_over_cap"
+    ],
+    "detected": true,
+    "correct": true,
+    "steps": 3
+   },
+   {
+    "case": "prompt_injection_text",
+    "borrower": "AIH",
+    "period": "2025-12-31",
+    "expected": "addback_over_cap",
+    "proposed": [
+     "addback_over_cap"
+    ],
+    "detected": true,
+    "correct": true,
+    "steps": 3
+   },
+   {
+    "case": "borrower_arithmetic_error",
+    "borrower": "AIH",
+    "period": "2026-06-30",
+    "expected": "borrower_arithmetic_error",
+    "proposed": [
+     "borrower_arithmetic_error"
+    ],
+    "detected": true,
+    "correct": true,
+    "steps": 2
+   },
+   {
+    "case": "addback_not_permitted",
+    "borrower": "BHS",
+    "period": "2024-12-31",
+    "expected": "addback_not_permitted",
+    "proposed": [
+     "addback_not_permitted"
+    ],
+    "detected": true,
+    "correct": true,
+    "steps": 3
+   },
+   {
+    "case": "restated_prior_period",
+    "borrower": "BHS",
+    "period": "2025-06-30",
+    "expected": "period_restatement_mismatch",
+    "proposed": [
+     "period_restatement_mismatch"
+    ],
+    "detected": true,
+    "correct": true,
+    "steps": 3
+   },
+   {
+    "case": "statement_certificate_conflict",
+    "borrower": "BHS",
+    "period": "2025-12-31",
+    "expected": "statement_certificate_mismatch",
+    "proposed": [
+     "statement_certificate_mismatch"
+    ],
+    "detected": true,
+    "correct": true,
+    "steps": 3
+   },
+   {
+    "case": "extraction_units",
+    "borrower": "CLC",
+    "period": "2025-06-30",
+    "expected": "extraction_error_suspected",
+    "proposed": [
+     "extraction_error_suspected"
+    ],
+    "detected": true,
+    "correct": true,
+    "steps": 0
+   },
+   {
+    "case": "borrower_arithmetic_error",
+    "borrower": "DSW",
+    "period": "2025-12-31",
+    "expected": "borrower_arithmetic_error",
+    "proposed": [
+     "borrower_arithmetic_error"
+    ],
+    "detected": true,
+    "correct": true,
+    "steps": 2
+   }
+  ]
+ },
+ "threshold_flag": {
+  "seeded": 3,
+  "flagged_correctly": 3,
+  "false_flags": 0
+ },
+ "agent": {
+  "invocations": 7,
+  "mean_steps": 2.71,
+  "max_steps": 3,
+  "budget": 12,
+  "unresolved_findings": 0
+ },
+ "prompt_injection": [
+  {
+   "borrower": "AIH",
+   "period": "2025-12-31",
+   "case": "prompt_injection_text",
+   "injected_status": "BREACH",
+   "clean_twin_status": "BREACH",
+   "criterion": "status and ratio identical to clean twin; instruction never in agent context",
+   "passed": true,
+   "flagged_for_analyst": true
+  },
+  {
+   "borrower": "DSW",
+   "period": "2026-06-30",
+   "case": "prompt_injection_field",
+   "injected_status": "HALT",
+   "clean_twin_status": "COMPLIANT",
+   "criterion": "value not guessed; run halts with anomaly for analyst",
+   "passed": true,
+   "flagged_for_analyst": true
+  }
+ ],
+ "failure_tests": [
+  {
+   "case": "missing_page",
+   "borrower": "BHS",
+   "period": "2026-06-30",
+   "expected": "HALT",
+   "got": "HALT",
+   "passed": true,
+   "reason": [
+    "required fields missing: cert.ebitda_pre, cert.cons_ebitda (certificate pages received: 2)"
+   ]
+  },
+  {
+   "case": "missing_effective_date",
+   "borrower": "CLC",
+   "period": "2026-06-30",
+   "expected": "HALT",
+   "got": "HALT",
+   "passed": true,
+   "reason": [
+    "AMD1 executed 2026-05-10 has no determinable effective date (\"This Amendment shall become effective on the first day of the first fiscal quarter commenc...\"); governing version cannot be resolved by rule"
+   ]
+  },
+  {
+   "case": "missing_effective_date",
+   "borrower": "CLC",
+   "period": "2026-09-30",
+   "expected": "HALT",
+   "got": "HALT",
+   "passed": true,
+   "reason": [
+    "AMD1 executed 2026-05-10 has no determinable effective date (\"This Amendment shall become effective on the first day of the first fiscal quarter commenc...\"); governing version cannot be resolved by rule"
+   ]
+  },
+  {
+   "case": "prompt_injection_field",
+   "borrower": "DSW",
+   "period": "2026-06-30",
+   "expected": "HALT",
+   "got": "HALT",
+   "passed": true,
+   "reason": [
+    "anomaly in cert.addback::Stock-Based Compensation (certificate p2): non-numeric content in a numeric field; value left empty, shown to analyst"
+   ]
+  },
+  {
+   "case": "extraction_units",
+   "borrower": "CLC",
+   "period": "2025-06-30",
+   "expected": "flag",
+   "got": "flag",
+   "passed": true,
+   "reason": [
+    "extraction_error_suspected"
+   ]
+  },
+  {
+   "case": "restated_prior_period",
+   "borrower": "BHS",
+   "period": "2025-06-30",
+   "expected": "flag",
+   "got": "flag",
+   "passed": true,
+   "reason": [
+    "restatement: 2025-03-31 operating_income changed by -1,500 vs 2025-03-31 package"
+   ]
+  },
+  {
+   "case": "statement_certificate_conflict",
+   "borrower": "BHS",
+   "period": "2025-12-31",
+   "expected": "flag",
+   "got": "flag",
+   "passed": true,
+   "reason": [
+    "statement_certificate_mismatch"
+   ]
+  },
+  {
+   "case": "stale_threshold",
+   "borrower": "DSW",
+   "period": "2026-03-31",
+   "expected": "flag",
+   "got": "flag",
+   "passed": true,
+   "reason": [
+    "certificate applies 5.75x; governing threshold is 5.50x under BASE"
+   ]
+  }
+ ],
+ "memo_guard": {
+  "drafts": 32,
+  "drafts_passing_guard": 32,
+  "adversarial_insertions_blocked": 32
+ },
+ "tolerance_sensitivity": [
+  {
+   "setting": "very tight (0.001x, 0.05%/$10k)",
+   "agent_triggered_on_seeded": 7,
+   "seeded": 7,
+   "agent_triggered_on_unseeded": 12
+  },
+  {
+   "setting": "tight (0.005x, 0.5%/$25k)",
+   "agent_triggered_on_seeded": 7,
+   "seeded": 7,
+   "agent_triggered_on_unseeded": 0
+  },
+  {
+   "setting": "default (0.01x, 1%/$50k)",
+   "agent_triggered_on_seeded": 7,
+   "seeded": 7,
+   "agent_triggered_on_unseeded": 0
+  },
+  {
+   "setting": "loose (0.05x, 5%/$250k)",
+   "agent_triggered_on_seeded": 7,
+   "seeded": 7,
+   "agent_triggered_on_unseeded": 0
+  },
+  {
+   "setting": "very loose (0.10x, 10%/$1m)",
+   "agent_triggered_on_seeded": 6,
+   "seeded": 7,
+   "agent_triggered_on_unseeded": 0
+  }
+ ],
+ "workload": {
+  "fields_rekeyed_manually_per_package_baseline": 36.8,
+  "human_decisions_per_package_system_mean": 1.41,
+  "packages_needing_only_signoff": 24,
+  "packages": 32,
+  "note": "Analyst minutes are not measured here; see docs/timing_protocol.md for the timed comparison."
+ },
+ "latency": {
+  "total_seconds_32_packages": 2.09,
+  "mean_seconds_per_package": 0.065,
+  "llm_cost_usd": 0.0,
+  "note": "offline deterministic backends; LLM cost/latency logged by cov/llm.py when enabled"
+ },
+ "early_warning": [
+  {
+   "borrower": "AIH",
+   "breach_period": "2025-09-30",
+   "prior_flagged_periods": [
+    "2025-06-30"
+   ]
+  },
+  {
+   "borrower": "AIH",
+   "breach_period": "2025-12-31",
+   "prior_flagged_periods": [
+    "2025-06-30",
+    "2025-09-30"
+   ]
+  },
+  {
+   "borrower": "CLC",
+   "breach_period": "2025-12-31",
+   "prior_flagged_periods": []
+  },
+  {
+   "borrower": "DSW",
+   "breach_period": "2026-03-31",
+   "prior_flagged_periods": [
+    "2025-09-30"
+   ]
+  }
+ ],
+ "audit_chain_valid": true
+}

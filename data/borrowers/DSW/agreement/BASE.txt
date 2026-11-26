@@ -1,0 +1,108 @@
+[[PAGE 1]]
+Section 0. Preamble.
+CREDIT AGREEMENT dated as of January 22, 2024 among Delta Software Group, Inc., as the
+Borrower, the Lenders party hereto from time to time, and Northgate Capital Partners LLC, as
+Administrative Agent. THIS DOCUMENT IS SYNTHETIC AND WAS CREATED FOR AN ACADEMIC PROJECT.
+
+Section 1.01(a). Defined Term: EBITDA before Adjustments.
+"EBITDA before Adjustments" means, for any Test Period, consolidated operating income of the
+Borrower and its Restricted Subsidiaries for such Test Period plus depreciation and
+amortization expense, in each case determined in accordance with GAAP.
+
+Section 1.01. Defined Term: Consolidated EBITDA.
+"Consolidated EBITDA" means, for any Test Period, EBITDA before Adjustments for such Test
+Period plus, without duplication and to the extent deducted in computing such amount: (a) Non-
+Recurring Charges; (b) Pro Forma Cost Savings; (c) Stock-Based Compensation. No other item
+shall be added back to Consolidated EBITDA except as expressly set forth in this definition.
+
+Section 1.01(f). Defined Term: Consolidated EBITDA (limitation).
+Provided that the aggregate amount added back pursuant to clause (a) and clause (b) for any
+Test Period shall not exceed 12.5% of EBITDA before Adjustments for such Test Period
+(calculated before giving effect to any such add-back).
+
+Section 1.01(g). Defined Term: Total Debt.
+"Total Debt" means the aggregate principal amount of all funded Indebtedness of the Borrower
+and its Restricted Subsidiaries, including Revolving Loans, Term Loans and any notes.
+
+Section 1.01(h). Defined Term: Net Debt.
+"Net Debt" means Total Debt minus all Unrestricted Cash.
+
+Section 1.01(i). Defined Term: Total Net Leverage Ratio.
+"Total Net Leverage Ratio" means, as of the last day of any Test Period, the ratio of (a) Net
+Debt as of such day to (b) Consolidated EBITDA for such Test Period.
+
+Section 1.01(j). Defined Term: Interest Coverage Ratio.
+"Interest Coverage Ratio" means the ratio of (a) Consolidated EBITDA to (b) Consolidated
+Interest Expense, in each case for such Test Period.
+
+Section 1.01(k). Defined Term: Test Period.
+"Test Period" means, as of any date, the period of four consecutive fiscal quarters then most
+recently ended.
+
+[[PAGE 2]]
+Section 2.01. Commitments.
+Subject to the terms and conditions set forth herein, each Lender agrees to make Term Loans to
+the Borrower on the Closing Date in an aggregate principal amount not exceeding its Term
+Commitment, and Revolving Loans from time to time during the Availability Period. Amounts
+repaid in respect of Term Loans may not be reborrowed.
+
+Section 2.08. Interest.
+The Loans comprising each Term SOFR Borrowing shall bear interest at Adjusted Term SOFR for the
+Interest Period in effect plus the Applicable Rate. The Applicable Rate shall be determined by
+reference to the leverage-based pricing grid set forth in Schedule 2.08, with step-downs of 25
+basis points at each level below 4.00 to 1.00, 3.50 to 1.00 and 3.00 to 1.00.
+
+Section 2.11. Mandatory Prepayments.
+Within five Business Days after financial statements are delivered for any fiscal year, the
+Borrower shall prepay Term Loans in an amount equal to 50% of Excess Cash Flow, reduced to 25%
+if the leverage ratio as of the last day of such fiscal year is less than 3.00 to 1.00 and to
+0% if less than 2.50 to 1.00.
+
+Section 2.20. Incremental Facilities.
+The Borrower may request Incremental Term Loans in an aggregate amount not to exceed the
+greater of $50,000,000 and 100% of Consolidated EBITDA, plus an unlimited amount so long as, on
+a pro forma basis, the leverage ratio would not exceed 4.75 to 1.00. This incurrence test is
+not a maintenance covenant.
+
+Section 5.01. Financial Statements.
+The Borrower shall deliver to the Administrative Agent (a) within 90 days after the end of each
+fiscal year, audited consolidated financial statements, and (b) within 45 days after the end of
+each of the first three fiscal quarters, unaudited consolidated financial statements, in each
+case certified by a Financial Officer as presenting fairly in all material respects the
+financial condition of the Borrower.
+
+Section 5.02. Compliance Certificate.
+Concurrently with any delivery of financial statements under Section 5.01, the Borrower shall
+deliver a certificate of a Financial Officer substantially in the form of Exhibit D (a)
+certifying that no Default has occurred, and (b) setting forth reasonably detailed calculations
+demonstrating compliance with the financial covenants, including a reconciliation of each add-
+back to Consolidated EBITDA.
+
+[[PAGE 3]]
+Section 5.09. Information Regarding Collateral.
+The Borrower shall furnish to the Administrative Agent prompt written notice of any change in
+its legal name, jurisdiction of organization or organizational identification number.
+
+Section 6.10(a). Financial Covenant: Total Net Leverage Ratio.
+The Borrower shall not permit the Total Net Leverage Ratio as of the last day of any Test
+Period to exceed the ratio set forth below opposite such Test Period: for any Test Period
+ending on or before June 30, 2025, 6.00 to 1.00; for any Test Period ending after June 30, 2025
+and on or before December 31, 2025, 5.75 to 1.00; for any Test Period ending after December 31,
+2025, 5.50 to 1.00.
+
+Section 6.10(b). Financial Covenant: Interest Coverage Ratio.
+The Borrower shall not permit the Interest Coverage Ratio for any Test Period to be less than
+2.00 to 1.00.
+
+Section 8.01. Events of Default.
+Each of the following shall constitute an Event of Default: (a) failure to pay principal when
+due; (b) failure to pay interest within three Business Days; (c) failure to observe any
+financial covenant; (d) failure to deliver the Compliance Certificate within five Business Days
+after it is due.
+
+Section 8.04. Right to Cure.
+Notwithstanding Section 8.01, in the event the Borrower fails to comply with a financial
+covenant, the Borrower may within 15 Business Days after the Compliance Certificate is due
+receive a Specified Equity Contribution, which shall increase Consolidated EBITDA solely for
+purposes of determining compliance; provided that no more than two such cures may be made in
+any four consecutive fiscal quarters and no more than five during the term of this Agreement.

@@ -1,0 +1,12 @@
+[
+ {
+  "borrower": "AIH",
+  "period": "2025-12-31",
+  "case": "prompt_injection_text"
+ },
+ {
+  "borrower": "DSW",
+  "period": "2026-06-30",
+  "case": "prompt_injection_field"
+ }
+]

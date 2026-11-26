@@ -1,0 +1,25 @@
+[[PAGE 1]]
+Section A0. Preamble.
+AMENDMENT NO. 1 TO CREDIT AGREEMENT dated as of March 14, 2025 among Brightwater Health
+Services, LLC, the Lenders party hereto and Northgate Capital Partners LLC, as Administrative
+Agent. SYNTHETIC DOCUMENT.
+
+Section A2(a). Amendment to definition of Consolidated EBITDA.
+The definition of "Consolidated EBITDA" in Section 1.01 is hereby amended by adding a new
+clause permitting the add-back of Run-Rate Synergies, which shall be subject to the same
+limitation as Pro Forma Cost Savings.
+
+Section A2(b). Amendment to Section 1.01(e).
+Section 1.01(e) of the Credit Agreement is hereby amended and restated so that the aggregate
+amount of Pro Forma Cost Savings and Run-Rate Synergies added back for any Test Period shall
+not exceed 20% of EBITDA before Adjustments for such Test Period.
+
+Section A3. Conditions to Effectiveness.
+This Amendment shall become effective as of March 31, 2025 (the "Amendment Effective Date") and
+the amendments in Section 2 shall apply to each Test Period ending on or after the Amendment
+Effective Date.
+
+Section A4. Fees.
+The Borrower shall pay to each consenting Lender an amendment fee equal to 0.25% of such
+Lender's Commitments. Except as expressly amended hereby, the Credit Agreement remains in full
+force.
