@@ -19,7 +19,6 @@ def client():
 def call(purpose, **kwargs):
     kwargs.setdefault("model", load_settings()["agent"]["llm_model"])
     kwargs.setdefault("max_tokens", 2000)
-    kwargs.setdefault("temperature", 0)
     t0 = time.time()
     resp = client().messages.create(**kwargs)
     USAGE.append({"purpose": purpose, "model": kwargs["model"], "input_tokens": resp.usage.input_tokens,

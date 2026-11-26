@@ -262,7 +262,7 @@ C.push(table(["Risk", "Control in this design", "Residual risk"], [
   ["Correlated errors (same model extracts and investigates)", "Verification uses XBRL, statements, prior packages; second read uses a different library and unit logic", "Add-backs have no independent public source"],
   ["Prompt injection via borrower documents", "Typed channels; free text only to humans; anomaly halts", "Attacks that look like plausible numbers"],
   ["Inappropriate autonomy", "No write tools; role-checked gate; system holds no role", "Process risk if roles are self-selected (prototype only)"],
-  ["Non-determinism", "Rule backends deterministic; LLM temperature 0; inputs hashed; commit logged", "LLM outputs can still vary across versions"],
+  ["Non-determinism", "Rule backends deterministic; fixed model id; LLM outputs logged; inputs hashed; commit logged", "LLM outputs can still vary across versions"],
   ["Drift (new agreement styles, layouts)", "Halt and anomaly rates monitored from the log", "Requires periodic revalidation"],
   ["Over-automation of judgment", "Disputed add-backs, ratings, breaches and waivers stay human", "Automation bias in reviewers"],
 ], [2600, 3900, 2860], { size: 16 }));
