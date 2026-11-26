@@ -14,7 +14,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 
 from datagen import agreements as ag
-from datagen.spec import BORROWERS, EXPECTED_CAUSE, FACTOR, QUARTERS, TEST_PERIODS, TIGHT_HEADROOM
+from datagen.spec import BORROWERS, EXPECTED_CAUSE, FACTOR, PATHS, QUARTERS, TEST_PERIODS, TIGHT_HEADROOM
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -298,7 +298,8 @@ def build():
             if "total_debt" in spec:
                 basis = spec["total_debt"]
             else:
-                basis = round(FACTOR[lev_mode] * thr_for_debt * cons + netted, -2)
+                f = PATHS.get(bid, {}).get(p, FACTOR[lev_mode])
+                basis = round(f * thr_for_debt * cons + netted, -2)
             revolver = round(basis * 0.15, -2)
             term = basis - revolver
             notes_amt = b.get("unsecured_notes", 0)

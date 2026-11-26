@@ -17,7 +17,7 @@ TEST_PERIODS = QUARTERS[3:]  # 8 quarterly test periods, each LTM
 # Headroom below this fraction of the threshold is reported as TIGHT
 TIGHT_HEADROOM = 0.10
 
-# Leverage target as a multiple of the governing threshold, by case
+# Leverage target as a multiple of the governing threshold, by case (overridden per period by "f")
 FACTOR = {"clean": 0.82, "tight": 0.965, "breach": 1.035}
 
 BORROWERS = {
@@ -174,3 +174,6 @@ CAUSES = [
     "period_restatement_mismatch", "statement_certificate_mismatch",
     "extraction_error_suspected", "unresolved",
 ]
+
+# Per-period leverage paths (net debt as a multiple of threshold x Consolidated EBITDA)
+PATHS = {'AIH': {'2024-12-31': 0.78, '2025-03-31': 0.84, '2025-06-30': 0.965, '2025-12-31': 1.035, '2026-03-31': 0.89, '2026-06-30': 0.95, '2026-09-30': 0.86}, 'BHS': {'2024-12-31': 0.8, '2025-03-31': 0.81, '2025-06-30': 0.83, '2025-09-30': 0.85, '2025-12-31': 0.87, '2026-03-31': 0.965, '2026-06-30': 0.88, '2026-09-30': 0.86}, 'CLC': {'2024-12-31': 0.76, '2025-03-31': 0.8, '2025-06-30': 0.84, '2025-09-30': 0.89, '2025-12-31': 1.04, '2026-03-31': 0.88, '2026-06-30': 0.85, '2026-09-30': 0.84}, 'DSW': {'2024-12-31': 0.74, '2025-03-31': 0.77, '2025-06-30': 0.81, '2025-09-30': 0.965, '2025-12-31': 0.86, '2026-03-31': 1.022, '2026-06-30': 0.82, '2026-09-30': 0.8}}

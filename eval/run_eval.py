@@ -355,21 +355,29 @@ def main():
 
 # ---------------------------------------------------------------------------------------- figures
 def figures(runs, M):
-    # 1. headroom trend per borrower
-    fig, ax = plt.subplots(figsize=(7.2, 3.6), dpi=200)
-    style(ax)
-    for i, b in enumerate(sorted({r["borrower"] for r in runs})):
-        seq = [(r["period"][:7], r["engine"]["lev_headroom"] * 100) for r in runs if r["borrower"] == b and r.get("engine")]
-        xs = [p for p, _ in seq]
-        ax.plot(xs, [h for _, h in seq], color=SERIES[i], lw=2, marker="o", ms=4, label=b)
-        ax.annotate(b, (xs[-1], seq[-1][1]), xytext=(6, 0), textcoords="offset points", color=INK, fontsize=9, va="center")
-    ax.axhline(0, color=INK2, lw=1)
-    ax.axhline(10, color=INK2, lw=0.8, ls="--")
-    ax.text(0.01, 10.8, "tight (<10%)", color=INK2, fontsize=8, transform=ax.get_yaxis_transform())
-    ax.set_ylabel("Leverage headroom (%)", color=INK2, fontsize=9)
-    ax.set_title("Leverage headroom by test period (halted periods omitted)", loc="left", color=INK, fontsize=11)
-    ax.legend(frameon=False, fontsize=8, ncol=4, loc="lower left")
-    plt.xticks(rotation=0, fontsize=8)
+    # 1. headroom trend per borrower (small multiples)
+    bids = sorted({r["borrower"] for r in runs})
+    fig, axes = plt.subplots(2, 2, figsize=(7.2, 4.4), dpi=200, sharey=True)
+    for i, (b, ax) in enumerate(zip(bids, axes.flat)):
+        style(ax)
+        seq = [r for r in runs if r["borrower"] == b]
+        xs = [r["period"][2:7] for r in seq]
+        ys = [r["engine"]["lev_headroom"] * 100 if r.get("engine") else None for r in seq]
+        ax.plot(xs, [0] * len(xs), alpha=0)  # register every period on the categorical axis
+        ax.axhspan(-10, 0, color="#ec4647", alpha=0.07, lw=0)
+        ax.axhspan(0, 10, color="#f2a600", alpha=0.07, lw=0)
+        ax.plot(xs, [y if y is not None else float("nan") for y in ys], color=SERIES[0], lw=2, marker="o", ms=4)
+        for x, y, r in zip(xs, ys, seq):
+            if y is None:
+                ax.text(x, 1, "HALT", ha="center", fontsize=6.5, color=INK2, rotation=90)
+            elif r.get("early_warning"):
+                ax.plot([x], [y], marker="o", ms=8, mfc="none", mec=INK, mew=1)
+        ax.set_title(f"{b} - {runs[[r['borrower'] for r in runs].index(b)]['borrower_name']}", loc="left", fontsize=8.5, color=INK)
+        ax.set_ylim(-7, 30)
+        ax.tick_params(axis="x", labelsize=6.5, rotation=45)
+    fig.supylabel("Leverage headroom (%)", fontsize=8.5, color=INK2)
+    fig.suptitle("Headroom to the governing leverage threshold (red band: breach, amber: tight; ring: early-warning flag)",
+                 fontsize=8.5, color=INK, x=0.02, ha="left")
     fig.tight_layout()
     fig.savefig(FIG / "headroom_trend.png")
     plt.close(fig)
@@ -388,8 +396,9 @@ def figures(runs, M):
             ax.text(bb.get_x() + bb.get_width() / 2, v + 0.08, str(v), ha="center", fontsize=8, color=INK)
     ax.set_xticks(range(3))
     ax.set_xticklabels([l for _, l in names], fontsize=9, color=INK)
-    ax.set_title("Status outcomes on 32 test periods", loc="left", color=INK, fontsize=11)
-    ax.legend(frameon=False, fontsize=8, loc="upper right")
+    ax.set_title("Status outcomes on 32 test periods", loc="left", color=INK, fontsize=11, pad=24)
+    ax.set_ylim(0, 4.6)
+    ax.legend(frameon=False, fontsize=8, loc="lower left", ncol=3, bbox_to_anchor=(0, 1.0))
     fig.tight_layout()
     fig.savefig(FIG / "status_vs_baselines.png")
     plt.close(fig)
@@ -405,11 +414,11 @@ def figures(runs, M):
             ax.text(bb.get_x() + bb.get_width() / 2, v + 1.5, f"{v:.0f}%", ha="center", fontsize=8, color=INK)
     ax.set_xticks(range(4))
     ax.set_xticklabels([l for _, l in types], fontsize=9, color=INK)
-    ax.set_ylim(0, 112)
+    ax.set_ylim(0, 110)
     ax.set_ylabel("Answer accuracy (%)", color=INK2, fontsize=9)
     ax.set_title(f"Definition retrieval on {M['retrieval']['kg']['all']['questions']} labelled multi-hop questions",
-                 loc="left", color=INK, fontsize=11)
-    ax.legend(frameon=False, fontsize=8, loc="upper center", ncol=2, bbox_to_anchor=(0.5, 1.0))
+                 loc="left", color=INK, fontsize=11, pad=22)
+    ax.legend(frameon=False, fontsize=8, loc="lower left", ncol=2, bbox_to_anchor=(0, 1.0))
     fig.tight_layout()
     fig.savefig(FIG / "retrieval.png")
     plt.close(fig)

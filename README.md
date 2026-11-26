@@ -18,13 +18,14 @@ credit agreement ──► knowledge graph ──► governing version by effect
 
 | | This system | Stale-definitions spreadsheet | Trust borrower certificate |
 |---|---|---|---|
-| Exact status match (of 32) | **32** | 25 | 21 |
+| Exact status match (of 32) | **32** | 23 | 21 |
 | Breaches detected (of 4) | **4** | 2 | 1 |
 | False breaches | **0** | 1 | 0 |
 | Should-halt cases reported compliant (of 4) | **0** | 4 | 4 |
 
 Definition retrieval, 47 labelled multi-hop questions: knowledge graph + effective-date rule 100% vs chunk retrieval (TF-IDF top-3) 53%.
-Seeded discrepancy causes identified 8/8; prompt-injection tests 2/2; failure tests 7/7; adversarial memo insertions blocked 32/32.
+Seeded discrepancy causes identified 8/8; prompt-injection tests 2/2; failure tests 8/8; adversarial memo insertions blocked 32/32.
+All 4 breaches were preceded by an early-warning flag 1-2 quarters earlier (16 of 28 quarters flagged, so treat it as a watch signal).
 Full per-case table: `results/eval_report.md`.
 
 **Read the limitations before quoting these numbers.** The benchmark is synthetic and the agreement language is templated,
@@ -72,6 +73,7 @@ python -m eval.llm_baseline     # single-prompt LLM baseline + Claude ReAct inve
 | `scripts/fetch_edgar.py` | EDGAR / XBRL fetcher for the real-filing borrower screen |
 | `config/settings.json` | Tolerances, step budget, authority matrix (never in prompts) |
 | `docs/` | Data notes, demo script, timing protocol |
+| `report/` | Final report (.docx/.pdf), presentation (.pptx/.pdf) and the scripts that build them from `results/` |
 
 ## Data
 
