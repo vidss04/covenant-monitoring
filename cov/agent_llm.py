@@ -27,7 +27,7 @@ class ClaudeInvestigator:
                 resp = llm.call("agent", system=SYSTEM, tools=TOOL_SPECS, messages=msgs)
                 msgs.append({"role": "assistant", "content": resp.content})
                 uses = [b for b in resp.content if b.type == "tool_use"]
-                if not uses:
+                if not uses or resp.stop_reason == "end_turn" and not uses:
                     return [{"component": "*", "cause": "unresolved", "citations": [],
                              "explanation": "agent stopped without submitting findings"}]
                 results = []
@@ -41,10 +41,16 @@ class ClaudeInvestigator:
                         tb.trace.append({"step": len(tb.trace) + 1, "tool": "submit_findings", "args": u.input})
                         return out
                     fn = getattr(tb, u.name, None)
-                    if fn is None or u.name.startswith("_"):
-                        res = {"error": "unknown tool"}
+                    allowed = {t["name"] for t in TOOL_SPECS}
+                    if fn is None or u.name not in allowed:
+                        res = {"error": f"unknown tool {u.name!r}"}
                     else:
-                        res = fn(**u.input)
+                        try:
+                            res = fn(**(u.input or {}))
+                        except BudgetExceeded:
+                            raise
+                        except Exception as e:  # bad arguments etc.: tell the model, don't crash the run
+                            res = {"error": f"{type(e).__name__}: {e}"}
                     results.append({"type": "tool_result", "tool_use_id": u.id, "content": json.dumps(res, default=str)})
                 msgs.append({"role": "user", "content": results})
         except BudgetExceeded:
