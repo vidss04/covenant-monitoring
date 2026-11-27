@@ -237,7 +237,17 @@ C.push(table(["Tolerance setting", "Seeded gaps investigated", "Investigations o
 C.push(CAP("Table 12. Tolerance sensitivity. The very-tight setting turns borrower rounding into 10 needless investigations; the default and looser settings separate seeded gaps from rounding on this data. Seeded gaps are large, so the upper bound is not stress-tested here."));
 C.push(...fig("headroom_trend.png", 6.2, "Figure 5. Headroom to the governing leverage threshold. Rings mark early-warning flags (three consecutive declines, or headroom under 15%)."));
 C.push(P(`Every one of the four breaches was preceded by an early-warning flag one or two quarters earlier. The flags are not precise, though: 16 of the 28 computed quarters carry one, because the 15% floor also fires on recovering credits. That is acceptable for a watch signal reviewed by a PM, but it is a ranking aid, not a prediction. On workload, the manual baseline re-keys about ${Math.round(M.workload.fields_rekeyed_manually_per_package_baseline)} fields per package before any analysis. With the system, ${M.workload.packages_needing_only_signoff} of 32 packages needed only a sign-off, and the mean was ${M.workload.human_decisions_per_package_system_mean} human decisions per package. We did not time analysts, so we make no claim about minutes saved; docs/timing_protocol.md sets out a crossover test for the team. Offline processing took ${M.latency.mean_seconds_per_package}s per package; with LLM backends, cost and latency are logged per call.`));
-C.push(H2("8.6 Interpretation"));
+C.push(H2("8.6 Check against real SEC filings"));
+C.push(P("To test whether the synthetic cases reflect real documents, we ran scripts/fetch_edgar.py on 10 filers selected from 159 that match covenant-compliance language on EDGAR. It retrieved about 170 Exhibit-10 credit documents and the XBRL company facts. We then read the financial-covenant section of the most recent agreement for 9 of them (labels in data_real/, marked as drafts pending team verification). Three findings bear directly on the design:"));
+C.push(table(["Finding (draft, 9 agreements)", "Count", "Design implication"], [
+  ["Maintenance covenant located", "7 of 9", "Quantum (liquidity test) and Cadre (covenants in an earlier base agreement) need follow-up"],
+  ["Threshold changes on an event or a borrower election, not a calendar date", "4 of 7", "Enviri (Rail Disposition, Clean Earth Effective Date), DSG (Covenant Ratchet Date), ModivCare (Covenant Relief Period), Digi (acquisition holiday). Same behaviour as synthetic borrower CLC: halt until a person supplies the event date"],
+  ["Conformed copy contains redline artifacts (struck and new numbers adjacent)", "2 of 7", "e.g. \u201c2.75 2.00 to 1.00\u201d; a naive pattern reads the struck number, so values need page-level human review"],
+  ["Covenant clause found by a fixed pattern of the kind that parses our synthetic agreements", "3 of 9", "Real text needs the LLM graph builder plus team review, as planned"],
+], [3800, 900, 4660], { size: 16 }));
+C.push(CAP("Table 13. Real-filing check. Counts come from our reading of the filings and are pending team verification."));
+C.push(P("The real filings confirm that the hard cases in the synthetic benchmark are not artificial: event-dependent thresholds are common, and templated parsing does not transfer. The next step is to score the LLM graph builder against these labels once verified."));
+C.push(H2("8.7 Interpretation"));
 C.push(P("Two kinds of evidence are mixed in these numbers, and they should be read differently. The control results (halts, flags, injection resistance, authority refusals, the numeric guard, version selection) test logic that does not depend on the data being realistic: an undatable amendment halts whatever the agreement looks like. The accuracy results for extraction and graph parsing depend heavily on the templated documents and would fall on real filings. The comparisons with baselines show the size of the risk the redesign removes, since stale definitions and trusted certificates fail in the ways the pain points predict. They do not show how an LLM-based competitor would do, and that is what B3 is for."));
 
 // 9
@@ -251,7 +261,7 @@ C.push(table(["Phase", "Scope", "Exit criterion"], [
   ["2. Assisted production (2-4 quarters)", "Analysts review system output; humans sign; model-risk validation of extractor and graph builder", "Validation report; override rate stable; audit sign-off"],
   ["3. Portfolio scale", "Full book; rating-migration analytics; waiver precedent search over the lender's own memos", "Ongoing monitoring of drift, halt and override rates"],
 ], [2500, 4300, 2560], { size: 17 }));
-C.push(CAP("Table 13. Implementation roadmap."));
+C.push(CAP("Table 14. Implementation roadmap."));
 C.push(P("**Human impact and adoption.** Adoption depends on analysts trusting the output, which is why every number links to a page and every finding can be rejected. Over-reliance is the opposite risk; the open-item check, separation of duties and the override-rationale requirement keep a person actively deciding. Scalability is not the constraint: the offline pipeline takes milliseconds, and the binding cost at scale is graph review for new agreements and amendments, which favours reviewing only changed sections."));
 
 // 10
@@ -266,8 +276,8 @@ C.push(table(["Risk", "Control in this design", "Residual risk"], [
   ["Drift (new agreement styles, layouts)", "Halt and anomaly rates monitored from the log", "Requires periodic revalidation"],
   ["Over-automation of judgment", "Disputed add-backs, ratings, breaches and waivers stay human", "Automation bias in reviewers"],
 ], [2600, 3900, 2860], { size: 16 }));
-C.push(CAP("Table 14. Risks and controls."));
-C.push(P("**Limitations.** (1) Synthetic, templated documents: extraction and graph scores are not predictive of real performance. (2) The LLM backends and the single-prompt baseline are implemented but unevaluated. (3) Analyst time was not measured. (4) Four borrowers and 32 quarters support per-case conclusions, not rates. (5) Equity cures, covenant holidays and syndicated-lender votes are recorded but not simulated. (6) The investigator's causes form a closed set: a novel cause comes back as unresolved, which is safe but needs a person. This is also the strongest argument for the LLM policy, which can still only choose from the set. (7) Public agreements are mostly bank-led syndicated facilities, so they are only a proxy for direct-lender documents."));
+C.push(CAP("Table 15. Risks and controls."));
+C.push(P("**Limitations.** (1) Synthetic, templated documents: extraction and graph scores are not predictive of real performance; the real-filing check (Section 8.6) covers covenant terms only, with draft labels. (2) The LLM backends and the single-prompt baseline are implemented but unevaluated. (3) Analyst time was not measured. (4) Four borrowers and 32 quarters support per-case conclusions, not rates. (5) Equity cures, covenant holidays and syndicated-lender votes are recorded but not simulated. (6) The investigator's causes form a closed set: a novel cause comes back as unresolved, which is safe but needs a person. This is also the strongest argument for the LLM policy, which can still only choose from the set. (7) Public agreements are mostly bank-led syndicated facilities, so they are only a proxy for direct-lender documents."));
 C.push(P("**Next steps to production.** Run scripts/fetch_edgar.py on 10-20 maintenance-covenant filers and score the LLM graph builder and extractor against hand-labelled gold. Run B3 and the Claude investigator (eval/llm_baseline.py) and compare causes, steps and cost with the rule policy. Run the timing protocol. Add equity-cure and covenant-reset handling. Connect roles to an identity provider. Complete independent validation before any output is relied on."));
 
 // References
@@ -315,7 +325,7 @@ C.push(P("Procedure per borrower-quarter: (1) quarterly operating income and D&A
 C.push(H1("Appendix F. Changes since the proposal and midpoint"));
 C.push(B("Forward covenant projection removed after the midpoint discussion; early warning uses headroom trend and breach sensitivity on reported figures."));
 C.push(B("Prior-memo search removed: no public corpus of lender memos. Listed as a phase-3 item over the lender's own memos."));
-C.push(B("Benchmark made fully synthetic with an independent answer key because EDGAR was unreachable from the build environment; the EDGAR fetcher and LLM graph builder are in place for the real-filing pilot."));
+C.push(B("Benchmark made fully synthetic with an independent answer key, so every quarter has a known answer; a real-filing check on 9 EDGAR agreements (Section 8.6) tests whether the hard cases are realistic."));
 C.push(B("The second-pass re-read now covers the whole affected page, not one field. In development, re-reading only the XBRL-tagged fields left secured-debt components wrong and produced a correct status for the wrong reason."));
 C.push(B("Added causes for statement-vs-certificate mismatch, a deterministic threshold-mismatch flag, the delivery-deadline rule, a hash-chained audit log, and separation-of-duties and override-rationale checks."));
 C.push(H1("Appendix G. Reproducing the results"));

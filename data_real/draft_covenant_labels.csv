@@ -1,0 +1,14 @@
+cik,company,document,section,covenant,op,threshold_schedule,event_contingent,notes
+0000045876,Enviri (Harsco),2026-02-24 Amendment No. 17 (conformed),7.01(a),Total Net Leverage Ratio,max,<=2025-03-31 4.75; 2025-06-30..09-30 5.00; 2025-12-31 5.25; 2026-03-31..09-30 5.50; 2026-12-31 5.00; 2027-03-31 4.50; thereafter 4.00,yes,-0.25 after Rail Disposition; +0.50 for 1 yr after Significant Acquisition (cap 4.50); 3.00 from Clean Earth Effective Date
+0000045876,Enviri (Harsco),same,7.01(b),Consolidated EBITDA / Consolidated Interest Charges,min,2.50,no,
+0000703604,Distribution Solutions Group,"2026-07-16 First Amendment (conformed, redlined)",6.12(a),Interest Coverage Ratio,min,2.00 (redline shows 2.75 struck),no,conformed text reads '2.75 2.00 to 1.00' - redline artifact
+0000703604,Distribution Solutions Group,same,6.12(b),Total Net Leverage Ratio,max,First Amendment Date..<2026-12-31 4.50; 2026-12-31..<2027-06-30 4.25; >=2027-06-30 4.00,yes,"alternative schedules after Alternate Funding Date (5.25 stepping to 4.00) and Covenant Ratchet Date (6.00/5.75/5.50); +0.50 for 4 quarters after Material Acquisition, max twice"
+0000832428,E.W. Scripps,2026-05-06 Amendment No. 1 (conformed),6.2,First Lien Net Leverage Ratio,max,2025-06-30..2026-09-30 3.50; 2026-12-31 and thereafter 3.25,no,tested only while Initial Revolving Commitments are outstanding
+0000854775,Digi International,2026-08-31 Credit Agreement,7.1(a),Interest Coverage Ratio,min,3.00,no,
+0000854775,Digi International,same,7.1(b),Total Net Leverage Ratio,max,3.50,yes,borrower may elect 4.00 after Permitted Acquisitions > $75m
+0001220754,ModivCare,"2024-11-07 Amendment No. 4 (conformed, redlined)",6.12(a),Total Net Leverage Ratio (revolver only),max,standard: 2022 5.50; 2023-03-31 5.00; 2023-06-30..09-30 5.25; 2023-12-31..2024-03-31 5.00; 2024-06-30 4.75; 2024-09-30+ 4.50,yes,"separate schedule during Covenant Relief Period; 2024-09-30 appears as both 6.50 and 5.25 in the redline - ambiguous, needs human; +0.50 twice (max 5.50)"
+0001738827,KLX Energy Services,2025-03-07 Note/Credit Agreement,6.08(a),Total Net Leverage Ratio,max,2025 4.50; 2026 4.00; 2027 3.50; 2028 3.00; 2029-03-31+ 2.50,no,calendar step-down; clean case for the effective-date rule
+0001802974,Mission Produce,2026-04-01 Credit Agreement,7.11(a),Consolidated Total Net Leverage Ratio,max,3.50,no,
+0001802974,Mission Produce,same,7.11(b),Consolidated Fixed Charge Coverage Ratio,min,1.25,no,
+0000709283,Quantum,2026-06-02 Term Loan Agreement (conformed),?,Minimum Liquidity (referenced),?,NOT LOCATED,?,covenant section not found in selected exhibit; check Section 6.x / other exhibit
+0001860543,Cadre Holdings,2024-12-23 Amendment,9.12 / 9.13,(referenced only),?,NOT LOCATED,?,covenants likely in the 2024-03-06 base agreement; check

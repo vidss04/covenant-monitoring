@@ -77,6 +77,21 @@ s.addText([{ text: "Governed agentic covenant monitoring for a middle-market dir
   { text: "Vivan Jain · Srivant Vishnuvajjala · Vidhi Chaturvedi · Manasi Prasad", options: { fontSize: 14 } }], { placeholder: "body" });
 s.addNotes("Open with the one-line thesis. We redesigned the quarterly covenant-compliance cycle so that language models only propose, deterministic code computes and verifies, and named people hold every consequential decision. ~30 seconds.");
 
+// agenda
+s = slide("CONTENT", "Opening");
+T(s, "Agenda");
+[["Problem", "Why covenant breaches hide in definitions"], ["Redesign", "Who proposes, what computes, who decides"],
+ ["Governance", "Authority enforced in code and config"], ["Demo", "Four scenes and the approval screen"],
+ ["Evidence", "Synthetic benchmark and a real SEC filing check"], ["Path to production", "Shadow first, authority last"]].forEach(([h, d], i) => {
+  const x = 0.6 + (i % 3) * 4.1, y = 1.6 + Math.floor(i / 3) * 2.45;
+  card(s, x, y, 3.9, 2.2);
+  s.addShape(pres.shapes.OVAL, { x: x + 0.3, y: y + 0.3, w: 0.6, h: 0.6, fill: { color: C.accent1 }, line: { color: C.accent1 }, objectName: `o${++n}` });
+  tx(s, String(i + 1), { x: x + 0.3, y: y + 0.3, w: 0.6, h: 0.6, fontSize: 18, bold: true, color: C.background1, align: "center", valign: "middle", margin: 0 });
+  tx(s, h, { x: x + 1.1, y: y + 0.3, w: 2.6, h: 0.6, fontSize: 19, bold: true, valign: "middle" });
+  tx(s, d, { x: x + 0.3, y: y + 1.1, w: 3.4, h: 0.9, fontSize: 15, color: C.accent5 });
+});
+s.addNotes("Fifteen to twenty minutes: about two on the problem, four on the redesign and governance, five on the demo, four on evidence, two on rollout, then questions.");
+
 // 2 hook
 s = slide("CONTENT", "Opening");
 T(s, "The certificate says compliant. Is it?");
@@ -95,10 +110,10 @@ s.addNotes("Hook. Ask the room before revealing the right side. This is our midp
 // 3 current state
 s = slide("CONTENT", "Workflow");
 T(s, "Today: re-key, re-read, recompute, reconcile");
-img(s, "current_state.png", 0.6, 1.35, 7.6);
+img(s, "current_state.png", 0.5, 1.3, 8.1);
 bullets(s, ["P1 Financials re-keyed by hand from PDFs", "P2 EBITDA definition rebuilt from an amended agreement, or a summary that has gone stale",
   "P3 Weak link from a ratio to its clause and page", "P4 Monitoring is reactive", "P5 Add-back judgment varies by analyst",
-  "P6 Every input comes from the borrower, so it is untrusted"], { x: 8.5, y: 1.45, w: 4.3, h: 5.2, fontSize: 15 });
+  "P6 Every input comes from the borrower, so it is untrusted"], { x: 8.8, y: 1.45, w: 4.0, h: 5.2, fontSize: 15 });
 s.addNotes("Current state, mapped from EDGAR credit agreements and compliance-certificate exhibits. The internal review chain is our assumption and we say so. Emphasise P2 and P6: they are where breaches hide. ~1.5 min.");
 
 // 4 principle
@@ -250,6 +265,22 @@ bullets(s, ["All 4 breaches were flagged 1-2 quarters earlier", "But 16 of 28 qu
   { x: 8.2, y: 1.45, w: 4.6, h: 5.2, fontSize: 15 });
 s.addNotes("We removed forward projection after the midpoint feedback. Early warning uses headroom trend and breach sensitivity on reported figures only. Be honest about the false-alarm rate. We did not time analysts; docs/timing_protocol.md has the crossover test.");
 
+// real filings
+s = slide("CONTENT", "Evaluation");
+T(s, "Real SEC filings: the hard cases are real");
+const rf = [["4 of 7", "thresholds change on an event or election, not a date", "Enviri: \u201cfrom and after the closing of the Rail Disposition\u201d \u2192 \u22120.25x; DSG: \u201cCovenant Ratchet Date\u201d; ModivCare: \u201cCovenant Relief Period\u201d", C.accent4],
+  ["2 of 7", "conformed copies with redline artifacts", "DSG interest coverage reads \u201c2.75 2.00 to 1.00\u201d; ModivCare \u201c5:25 5.25 to 1:00 1.00\u201d", C.accent3],
+  ["3 of 9", "clauses found by a fixed pattern", "Templated parsing does not transfer; real text goes to the LLM graph builder plus team review", C.accent1]];
+rf.forEach(([big, lab, ex, col], i) => {
+  const x = 0.6 + i * 4.15;
+  card(s, x, 1.45, 3.95, 4.6);
+  stat(s, x + 0.3, 1.6, 3.4, big, lab, col);
+  tx(s, ex, { x: x + 0.3, y: 3.6, w: 3.4, h: 2.3, fontSize: 14 });
+});
+tx(s, "10 filers pulled from EDGAR (~170 credit documents + XBRL); covenants read for 9. Draft labels, pending team verification (data_real/).",
+  { x: 0.6, y: 6.25, w: 12.1, h: 0.5, fontSize: 13, italic: true, color: C.accent5 });
+s.addNotes("This is why the effective-date rule halts on event-dependent thresholds: in real agreements it is the common case, not an edge case. Our synthetic Cedar borrower models exactly this. The counts are from our reading of the filings and still need a teammate to verify.");
+
 // 14 implementation
 s = slide("CONTENT", "Implementation");
 T(s, "Path to production: shadow first, authority last");
@@ -284,6 +315,20 @@ lim.forEach(([h, d], i) => {
   tx(s, d, { x: x + 0.25, y: y + 0.6, w: 5.5, h: 0.85, fontSize: 14 });
 });
 s.addNotes("Say this plainly. The control evidence does not depend on realistic data; the accuracy evidence does.");
+
+// takeaways
+s = slide("CONTENT", "Close");
+T(s, "Three takeaways");
+[["Put the definitions in a graph and pick the version by date", "Most errors hide in amended definitions; chunk retrieval returned the superseded threshold"],
+ ["Let models propose, never decide", "Every number comes from code, every status from a rule, every determination from a named person"],
+ ["Stopping is a feature", "Missing pages, undatable amendments and injected text halt the run instead of producing a confident wrong answer"]].forEach(([h, d], i) => {
+  const y = 1.55 + i * 1.65;
+  s.addShape(pres.shapes.OVAL, { x: 0.7, y: y + 0.15, w: 0.75, h: 0.75, fill: { color: C.accent2 }, line: { color: C.accent2 }, objectName: `o${++n}` });
+  tx(s, String(i + 1), { x: 0.7, y: y + 0.15, w: 0.75, h: 0.75, fontSize: 22, bold: true, color: C.background1, align: "center", valign: "middle", margin: 0 });
+  tx(s, h, { x: 1.75, y, w: 10.8, h: 0.6, fontSize: 22, bold: true });
+  tx(s, d, { x: 1.75, y: y + 0.6, w: 10.8, h: 0.7, fontSize: 16, color: C.accent5 });
+});
+s.addNotes("Close on the three ideas. Then hand to Q&A.");
 
 // 16 close
 s = slide("DARK_TITLE", "Close");
