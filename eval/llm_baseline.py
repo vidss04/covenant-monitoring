@@ -48,8 +48,15 @@ def main():
     RESULTS.mkdir(exist_ok=True)
     out_path = RESULTS / "llm_baseline.json"
     state = json.loads(out_path.read_text()) if out_path.exists() else {}
-    done_sp = {(r["borrower"], r["period"]) for r in state.get("single_prompt", [])}
-    done_ag = {(r["borrower"], r["period"]) for r in state.get("claude_agent", [])}
+    # rows that errored are dropped so a rerun retries them
+    state["single_prompt"] = [r for r in state.get("single_prompt", []) if r.get("llm_status") != "ERROR"]
+    state["claude_agent"] = [r for r in state.get("claude_agent", []) if r.get("status") != "ERROR"]
+    done_sp = {(r["borrower"], r["period"]) for r in state["single_prompt"]}
+    done_ag = {(r["borrower"], r["period"]) for r in state["claude_agent"]}
+    try:  # fail fast on a bad key instead of recording 64 errors
+        llm.call("auth_check", messages=[{"role": "user", "content": "Reply OK."}], max_tokens=5)
+    except Exception as e:  # noqa
+        sys.exit(f"API check failed: {type(e).__name__}: {e}\nFix ANTHROPIC_API_KEY (see README) and rerun; nothing was overwritten.")
     state.setdefault("single_prompt", [])
     state.setdefault("claude_agent", [])
     only = sys.argv[1] if len(sys.argv) > 1 else "both"   # both | single | agent
